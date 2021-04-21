@@ -1,1 +1,24 @@
-Body{color: blue;}
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: auto;
+}
+.omf__logo{
+    position:fixed;
+    display:flex;
+}
+.omf__logo--contain{
+    object-fit:cover;
+  
+}
+.omf__recherche{
+    position:fixed;
+    display: inline-block;
+}
+.omf__nav--box .omf__nav--compo {
+    position:fixed;
+    display:inline-block;
+    
+}

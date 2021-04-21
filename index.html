@@ -1,21 +1,82 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  
-  <title>"OhmyFood"</title>
-
+    
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fff6ed6f98.js" crossorigin="anonymous"></script>
+        <title>OhmyFood</title>
+    </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container">ohmyfood</div>
 
-        </nav>
+    <header>
+
+        <div class="omf__logo"><img src="images\logo\ohmyfood.png" alt="omf logo" class="omf__logo--contain"></div>
+
+        <div id="omf__recherche">
+            <div class="omf__recherche--pointeur">
+                <id class="fas fa-map-marker-alt"></i>
+            </div>
+            
+            <div id="omf__recherche--ville">
+                <form method="post" action="traitement.php">
+                    <p class="rech"><input type="search" placeholder="Paris, Belleville" /></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="omf__txt--reservez">
+            <h2>Réservez le menu qui vous convient</h2>
+        </div>
+        
+        <div class="omf__txt--decouvrez">
+            <h3>Découvrez les restaurants d'exception, sélectionnés par nos soins.</h3>
+        </div>
+        
+        <button class="omf__explorez">Explorer nos restaurants</button>
+       
     </header>
+
+    
+    <nav>
+        <div class="omf__nav">
+            
+            <div class="omf__nav--fonctionnement">
+                <h2> Fonctionnement</h2>
+            </div>
+
+            <div class="omf__nav--box">
+                <div class="omf__nav--num">1</div>
+                <div class="omf__nav--choix">
+                    <div class="omf__nav--picto"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="omf__nav--text">Choisissez un restaurants</div>
+                </div>
+            </div>
+
+            <div class="omf__nav--box">
+                <div class="omf__nav--num">2</div>
+                <div class="omf__nav--compo">
+                    <div class="omf__nav--picto"><i class="fas fa-list-ul"></i></div>
+                    <div class="omf__nav--text">Composez votre menu</div>
+                </div>
+            </div>
+
+            <div class="omf__nav--box">
+                <div class="omf__nav--num">3</div>
+                <div class="omf__nav--degust">
+                    <div class="omf__nav--picto"><i class="fas fa-store"></i></div>
+                    <div class="omf__nav--text">Dégustez au restaurant</div>
+                </div>
+            </div>
+
+
+
+        <div class="container"></div>
+
+    </nav>
     <footer>
 
     </footer>
