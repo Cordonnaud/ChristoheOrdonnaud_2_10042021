@@ -1,18 +1,4 @@
-
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) 
-  {
-      :root{
-    --search-bar-clr: rgb(214, 214, 214);
-    --header-back-clr : rgb(240, 240, 240);
-}
-      body{
+   body{
         display: flex;
         flex-direction: column;
         max-width:100%;
@@ -20,11 +6,27 @@
         padding: 20px 40px;
         font-family:'Roboto', sans-serif;
     }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape 
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) 
+  {*/
+      :root{
+    --search-bar-clr: rgb(214, 214, 214);
+    --header-back-clr: rgb(240, 240, 240);
+    --butt-back-clr: #9356DC;
+}
+   
     .omf__logo{
         display:flex;
         flex-direction:row; 
         justify-content: center;
         padding:10px 0px;
+        margin-bottom: 20px;
     }
     .omf__img--contain{
         width:100%;
@@ -75,16 +77,30 @@
         align-items: center;
         
     }
-    .omf__head--text1{ 
-        display:flex; 
-        flex-direction:row; 
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
+    .omf__head--text1{
+        font-size: 4rem;
         font-weight: bold;
-      
-        margin: 0px
+        height:min-content;
+        text-align: center;
+        margin: 50px 20px 20px 20px;
+        padding: 0px 50px;
     }
+    .omf__head--text2{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 20px;
+        padding: 0px 20px;
+    }
+    button{
+        font-size: 2.5rem;
+        background-color: var(--butt-back-clr);
+        color: #FFF;
+        border-radius: 50px;
+        width:60%;
+        height:100px;
+        margin: 20px 20px 50px 20px;
+    }
+   
     
     /*.omf__head--menu{
         display:flex;
