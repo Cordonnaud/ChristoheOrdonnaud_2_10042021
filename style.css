@@ -1,24 +1,30 @@
-body{
+body nav header{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width: auto;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
 }
 .omf__logo{
-    position:fixed;
     display:flex;
+    flex-direction:row; 
 }
-.omf__logo--contain{
+.omf__img--contain{
+    width:100%;
     object-fit:cover;
   
 }
 .omf__recherche{
-    position:fixed;
-    display: inline-block;
+    display: flex;
+    flex-direction:row;
 }
-.omf__nav--box .omf__nav--compo {
-    position:fixed;
-    display:inline-block;
+.omf__nav{
+    width: 100%;
+}
+.omf__nav--box {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    width: 100%;
+     
     
 }
