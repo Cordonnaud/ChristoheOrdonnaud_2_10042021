@@ -16,135 +16,208 @@
   and (max-device-width: 480px) 
   {*/
       :root{
-    --search-bar-clr: rgb(214, 214, 214);
-    --header-back-clr: rgb(240, 240, 240);
-    --butt-back-clr: #9356DC;
-}
-   
-    .omf__logo{
-        display:flex;
-        flex-direction:row; 
-        justify-content: center;
-        padding:10px 0px;
-        margin-bottom: 20px;
-    }
-    .omf__img--contain{
-        width:100%;
-        object-fit:cover;
-    }
-    .omf__head .omf__head--back{
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 100%;
-        
-     }
-     .omf__head--back{
-         background-color: var(--header-back-clr);
+          --search-bar-clr: rgb(214, 214, 214);
+          --header-back-clr: rgb(240, 240, 240);
+          --butt-back-clr: #9356DC;
+          --hover-back-clr: #e2cfe7;
         }
-    .omf__head--search{
-        background-color : var(--search-bar-clr);
-        display:flex;
-        flex-direction:row;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .omf__head--pointeur {
-        display:flex; 
-        flex-direction:row; 
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 2.4rem;
-        width: 200px;
-        padding:0px 0px;
-        margin:0px;
-    }
-    input {
-        width: 75%;
-        font-size: 2.4rem;
-        border: none;
-        background-color : var(--search-bar-clr);
-        padding:0px 20px;
-        margin: 0px 20px;
-    
-    }
-    ::placeholder {
-        color:#000;
-        align-items: center;
+        .omf__head .omf__head--back {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .omf__head--back{
+            background-color: var(--header-back-clr);
+        }
+        .omf__logo{
+            display:flex;
+            flex-direction:row; 
+            justify-content: center;
+            padding:10px 0px;
+            margin-bottom: 20px;
+        }
+        .omf__img--contain{
+            width:100%;
+            object-fit:cover;
+        }
+        .omf__head--search{
+            background-color : var(--search-bar-clr);
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .omf__head--pointeur {
+            display:flex; 
+            flex-direction:row; 
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 2.4rem;
+            width: 200px;
+            padding:0px 0px;
+            margin:0px;
+        }
+        input {
+            width: 75%;
+            font-size: 2.4rem;
+            border: none;
+            background-color : var(--search-bar-clr);
+            padding:0px 20px;
+            margin: 0px 20px;
         
-    }
-    .omf__head--text1{
-        font-size: 4rem;
-        font-weight: bold;
-        height:min-content;
-        text-align: center;
-        margin: 50px 20px 20px 20px;
-        padding: 0px 50px;
-    }
-    .omf__head--text2{
-        font-size: 2.5rem;
-        text-align: center;
-        margin: 20px;
-        padding: 0px 20px;
-    }
-    button{
-        font-size: 2.5rem;
-        background-color: var(--butt-back-clr);
-        color: #FFF;
-        border-radius: 50px;
-        width:60%;
-        height:100px;
-        margin: 20px 20px 50px 20px;
-    }
-   
+        }
+        ::placeholder {
+            color:#000;
+            align-items: center;
+            
+        }
+        .omf__head--text1{
+            font-size: 4rem;
+            font-weight: bold;
+            height:min-content;
+            text-align: center;
+            margin: 50px 20px 20px 20px;
+            padding: 0px 50px;
+        }
+        .omf__head--text2{
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px;
+            padding: 0px 20px;
+        }
+        button{
+            font-size: 2.5rem;
+            background-color: var(--butt-back-clr);
+            color: #FFF;
+            border-radius: 50px;
+            width:60%;
+            height:100px;
+            margin: 20px 20px 50px 20px;
     
-    /*.omf__head--menu{
-        display:flex;
-        flex-direction:row;
-        width: 100%;
-        height: auto;
-    }
-    .omf__header--return{
-        z-index: -2;
-    }
-    .omf__entete--menu{
-        display:flex;
-        flex-direction:row;
-        width: 100%;
-        height: auto;
-        justify-content:space-around;
-        align-items:center;
+        }
+        .omf__nav{
+            display:flex;
+            flex-flow:column wrap;
+            justify-content:flex-start;
+            align-content:flex-start;
+            align-items:flex-start;
+            width: 100%;
+            margin: 100px 0px 100px 0px;
+            padding: 0px 20px;
+        }
+        .omf__nav--fonctionnement{
+            font-size: 2.5rem;
+        }
+        .omf__nav--box{
+            display:flex;
+            flex-flow:row wrap;
+            align-items:baseline;
+            width:100%;
+            margin: 0px 0px 50px 0px;
+        }
+        .omf__nav--num {
+            display:flex; 
+            flex-direction:row; 
+            justify-content: center;
+            align-items: center;
+            font-size: 2.1rem;
+            width:60px;
+            height:60px;
+            background-color: var(--butt-back-clr);
+            border-radius: 30px;
+            color:#FFF;
+
+
+        }
+        .omf__nav--etiq {
+            display:flex; 
+            flex-direction:row; 
+            justify-content: flex-start;
+            align-items: center;
+            background-color: var(--header-back-clr);
+            width:80%;
+            border-radius: 40px;
+            padding: 40px 20px;
+            height:auto;
+            color: grey;
+
+        }
+        .omf__nav--etiq:hover{
+            background-color: var(--hover-back-clr);
+        }
+        .omf__nav--picto{ 
+            display:flex; 
+            flex-direction:row; 
+            justify-content: center;
+            align-items: center;
+            font-size: 2.1rem;
+            width:60px;
+            height:60px;
+            margin: 0px 20px 0px 20px;
+            color: grey;
+        }
+        .omf__nav--picto:hover{
+            color: var(--butt-back-clr);
+        }
+        .omf__nav--text{
+            display:flex; 
+            flex-direction:row; 
+            justify-content: center;
+            align-items: center;
+            font-size: 2.1rem;
+           
+           
+        }
+       
+        
+        /*.omf__head--menu{
+            display:flex;
+            flex-direction:row;
+            width: 100%;
+            height: auto;
+        }
+        .omf__header--return{
+            z-index: -2;
+        }
+        .omf__entete--menu{
+            display:flex;
+            flex-direction:row;
+            width: 100%;
+            height: auto;
+            justify-content:space-around;
+            align-items:center;
+        
+         }
+         .omf__entete--nom{
+            width: 100%;
+            font-family:'Shrikhand', sans-serif;
+        }
+        .omf__sect--picto{
+            display:flex;
+            flex-direction:row;
+            width: 100%;
+            height: 100px;
+            justify-content:space-around;
+            align-items:center;
+        
+        
+        }
+        
+        .omf__recherche{
+            display: flex;
+            flex-direction:row;
+        }
+        
+        .omf__nav--box {
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            width: 100%;
+        }*/
     
-     }
-     .omf__entete--nom{
-        width: 100%;
-        font-family:'Shrikhand', sans-serif;
-    }
-    .omf__sect--picto{
-        display:flex;
-        flex-direction:row;
-        width: 100%;
-        height: 100px;
-        justify-content:space-around;
-        align-items:center;
     
-    
-    }
-    
-    .omf__recherche{
-        display: flex;
-        flex-direction:row;
-    }
-    .omf__nav{
-        width: 100%;
-    }
-    .omf__nav--box {
-        display:flex;
-        flex-direction:row;
-        justify-content:flex-start;
-        width: 100%;
-    }*/
