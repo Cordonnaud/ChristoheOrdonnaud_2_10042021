@@ -218,9 +218,9 @@
         }
         a:link {
             text-decoration: none;
-            color:none;
+            t:none;
         }
-        .omf__img--contain{
+        .omf__img--contain1{
             position:relative;
             z-index: 1;
             width:100%;
@@ -267,9 +267,11 @@
             width:100px;
             height:100px;
             margin: 0px 20px 0px 0px;
+            color:linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+
         }
-        .omf__sect--picto :hover{
-            color: linear-gradient(180deg, var(--butt-back-clr),#c94fd4);
+         /*.omf__sect--picto :hover{
+            color: var(--butt-back-clr); */
         }
 
 
