@@ -43,8 +43,8 @@
     display:flex;
     position: absolute;
     z-index:1 ;
-    width:70%;
-    height:70%;
+    width:90%;
+    height:90%;
     border-radius: 50px;
     background-color: var(--select-back-clr);
     opacity:.5;
@@ -98,6 +98,10 @@
          transform: scale(.6);
     }
 }
+
+
+
+
 .omf__head .omf__head--back {
     display:flex;
     flex-direction:column;
@@ -278,20 +282,20 @@ button:active{
     align-content:flex-start;
     align-items:flex-start;
     width: 100%;
-    margin: 100px 40px 50px 0px;
+    margin: 70px 40px 20px 0px;
     background-color: var(--header-back-clr);
 }
 
 .omf__sect--restaurants{
     font-size: 2.5rem;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 0px;
 }
 .omf__sect--restos{
-    padding: 0px 40px 40px 40px;
+    padding: 0px 0px 40px 0px;
    
 }
 .omf__sect--img{ 
-    padding: 0px 0px ;
+    padding: 0px 0px ;  
     
 }
 .omf__sect--nouveau{
@@ -450,13 +454,59 @@ a {
 
 
 .omf__head--menu{
+    position: absolute;
+    z-index: 2;
     display:flex;
     flex-direction:row;
+    justify-content: flex-start;
+
     width: 100%;
     height: auto;
+    background: white;
 }
 .omf__header--return{
-    z-index: -2;
+    position:relative;
+    z-index: 4;
+    font-size: 3rem;
+    margin: 0px 0px 0px 40px;
+    padding-top: 10px;
+}
+.omf__logo1{
+    position:relative;
+    z-index: 3;
+    display: flex;
+    left:20%;
+    transform-origin: 50% 50%;
+    flex-direction: row;
+    align-items: center;
+    max-width:100%;
+}
+
+
+.omf__img--contain{
+    position:relative;
+    z-index: 1;
+    width:100%;
+    height:700px;
+    object-fit:cover;
+    object-position: 50% 40%;
+}
+
+
+
+
+section{
+    position:relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column ;
+    top:-100px;
+    max-width:100%;
+    height: auto;
+    background: var(--header-back-clr);
+    border-top-left-radius:70px;
+    border-top-right-radius:70px;
+    padding:  0px 40px 0px 40px;
 }
 .omf__entete--menu{
     display:flex;
@@ -465,23 +515,65 @@ a {
     height: auto;
     justify-content:space-around;
     align-items:center;
-
- }
+}
  .omf__entete--nom{
     width: 100%;
     font-family:'Shrikhand', sans-serif;
+    font-size: 2.4rem;
 }
 .omf__sect--picto1{
     display:flex;
     flex-direction:row;
-    width: 100%;
+    width: 100px;
     height: 100px;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
+    padding-right: 40px;
+    
+}
+.omf__sect--picto1:hover .omf__picto--regular{
+    opacity: 0;
+    
+}
+.omf__sect--picto1:hover .omf__picto--solid{
+    opacity: 1;
+    
+}
+.omf__partie{ 
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+    height:auto;
+    font-size:2rem;
+}
+.omf__partie--titre{
+    padding: 5px 0px;
+
+}
+.omf__partie--underline{
+    width:100px;
+    height:7px;
+    margin: 5px 0px;
+    background-color: var(--select-back-clr);
+}
+
+.omf__partie--item{
+    
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:auto;
+    padding: 20px 0px 20px 0px;
+    margin:20px 0px 20px 0px;
+    background :#FFF;
+    border-radius: 20px;
+
+}
+.omf__item--description{
+
 }
 
 
 
-        
-    
-    
+
+
