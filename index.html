@@ -11,213 +11,203 @@
     </head>
 
 <body>
-    
-    <header>
-        <div class="omf__head">
-
-            <div class="omf__logo">
-                <img src="images\logo\ohmyfood.png" alt="omf__logo" class="omf__imglog--contain">
-            </div>
-            
-            <div class="omf__head--back">
-                <div class="omf__head--search">
-                    <div class="omf__head--pointeur">
-                        <id class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="omf__head--ville">
-                        <form method="post" action="traitement.php">
-                            <p class="rech"><input type="search" placeholder="Paris, Belleville" /></p>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="omf__head--text1">
-                    Réservez le menu qui vous convient
-                </div>
-            
-                <div class="omf__head--text2">
-                    Découvrez les restaurants d'exception, sélectionnés par nos soins.
-                </div>
-            
-                <button class="omf__head--text3"> Explorer nos restaurants.</button>
-            </div>
-        </div>
-    </header>
-
-
     <div class="loading_spinner">
         <div class="omf__spinner--bckgd"></div>
         <i class="fas fa-coffee"></i>
         <i class="fas fa-spinner"></i>
     </div>
-
-
-    <nav>
-        <div class="omf__nav">
-            
-            <div class="omf__nav--fonctionnement">
-                <h2> Fonctionnement</h2>
-            </div>
-
-            <div class="omf__nav--box">
-                <div class="omf__nav--num">1</div>
-                <div class="omf__nav--etiq">
-                    <div class="omf__nav--picto"><i class="fas fa-mobile-alt"></i></div>
-                    <div class="omf__nav--text">Choisissez un restaurants</div>
+    <div id="content">
+        <header>
+            <div class="omf__head">
+    
+                <div class="omf__logo">
+                    <img src="images/logo/ohmyfood.png" alt="omf__logo" class="omf__imglog--contain">
                 </div>
-            </div>
-
-            <div class="omf__nav--box">
-                <div class="omf__nav--num">2</div>
-                <div class="omf__nav--etiq">
-                    <div class="omf__nav--picto"><i class="fas fa-list-ul"></i></div>
-                    <div class="omf__nav--text">Composez votre menu</div>
-                </div>
-            </div>
-
-            <div class="omf__nav--box">
-                <div class="omf__nav--num">3</div>
-                <div class="omf__nav--etiq">
-                    <div class="omf__nav--picto"><i class="fas fa-store"></i></div>
-                    <div class="omf__nav--text">Dégustez au restaurant</div>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-
-
-    <section>
-        <div class="omf__sect">
-
-            <div class="omf__sect--restaurants">
-                <h2>Restaurants</h2>
-            </div>
-
-            <div class="omf__sect--restos"><a href="1_la-palette-du-gout.html">
-
-                <div class="omf__sect--img">
-                    <div class="omf__sect--nouveau">Nouveau</div>
-                    <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="omf__img--lapal" class="omf__img--contain1"> 
-                                     
-                </div>
-
-                <div class="omf__sect--infos">
-
-                    <div class="omf__sect--description">
-                        <div class="omf__sect--nom">La palette du goût</div>
-                        <div class="omf__sect--lieu">Ménilmontant</div>
-                    </div></a>
-
-                    <div class="omf__sect--picto">
-                        <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
-                        <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                
+                <div class="omf__head--back">
+                    <div class="omf__head--search">
+                        <div class="omf__head--pointeur">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="omf__head--ville">
+                            <form method="post" action="traitement.php">
+                                <p class="rech"><input type="search" placeholder="Paris, Belleville" /></p>
+                            </form>
+                        </div>
                     </div>
-                </div> 
-
-            </div>
-
-
-            <div class="omf__sect--restos"><a href="2_la-note-enchantee.html">
-
-                <div class="omf__sect--img">
-                    <div class="omf__sect--nouveau">Nouveau</div>  
-                    <img src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg" alt="omf__img--lanote" class="omf__img--contain1">
-                                      
-                </div>
-
-                <div class="omf__sect--infos">
-
-                    <div class="omf__sect--description">
-                        <div class="omf__sect--nom">La note enchantée</div>
-                        <div class="omf__sect--lieu">Charonne</div>
-                    </div></a>
-
-                    <div class="omf__sect--picto">
-                        <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
-                        <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+    
+                    <div class="omf__head--text1">
+                        Réservez le menu qui vous convient
                     </div>
-                </div>
-
-            </div>
-
-
-            <div class="omf__sect--restos"><a href="3_a-la-francaise.html">
-
-                <div class="omf__sect--img">
-                    <img src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="omf__img--alafr" class="omf__img--contain1">
-                </div>
-
-                <div class="omf__sect--infos">
-
-                    <div class="omf__sect--description">
-                        <div class="omf__sect--nom">À la française</div>
-                        <div class="omf__sect--lieu">Cité Rouge</div>
-                    </div></a>
-
-                    <div class="omf__sect--picto">
-                        <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
-                        <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                
+                    <div class="omf__head--text2">
+                        Découvrez les restaurants d'exception, sélectionnés par nos soins.
                     </div>
+                
+                    <button class="omf__head--text3"> Explorer nos restaurants.</button>
                 </div>
-
             </div>
-
-
-            <div class="omf__sect--restos"><a href="4_le-delice-des-sens.html">
-
-                <div class="omf__sect--img">
-                    <img src="images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="omf__img--ledel" class="omf__img--contain1">
-                </div>
-
-                <div class="omf__sect--infos">
-
-                    <div class="omf__sect--description">
-                        <div class="omf__sect--nom">Le délice des sens</div>
-                        <div class="omf__sect--lieu">Folie-Méricourt</div>
-                    </div></a>
-
-                    <div class="omf__sect--picto">
-                        <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
-                        <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
+        </header>
     
     
-    <footer>
-        <div class="omf__footer">
-            
-            <div class="omf__logo--footer">
-                <img src="images\logo\ohmyfood@2x.svg" alt="omf__logo" class="omf__imglog--contain1">
+        <nav>
+            <div class="omf__nav">
+                
+                <div class="omf__nav--fonctionnement">
+                    <h2> Fonctionnement</h2>
+                </div>
+    
+                <div class="omf__nav--box">
+                    <div class="omf__nav--num">1</div>
+                    <div class="omf__nav--etiq">
+                        <div class="omf__nav--picto"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="omf__nav--text">Choisissez un restaurants</div>
+                    </div>
+                </div>
+    
+                <div class="omf__nav--box">
+                    <div class="omf__nav--num">2</div>
+                    <div class="omf__nav--etiq">
+                        <div class="omf__nav--picto"><i class="fas fa-list-ul"></i></div>
+                        <div class="omf__nav--text">Composez votre menu</div>
+                    </div>
+                </div>
+    
+                <div class="omf__nav--box">
+                    <div class="omf__nav--num">3</div>
+                    <div class="omf__nav--etiq">
+                        <div class="omf__nav--picto"><i class="fas fa-store"></i></div>
+                        <div class="omf__nav--text">Dégustez au restaurant</div>
+                    </div>
+                </div>
+    
             </div>
-
-            <div class="omf__footer--propose">
-                <div class="omf_footer--picto"><i class="fas fa-utensils"></i></div>
-                <div class="omf_footer--text1">Proposer un restaurant</div>
+        </nav>
+    
+    
+        <section>
+            <div class="omf__sect">
+    
+                <div class="omf__sect--restaurants">
+                    <h2>Restaurants</h2>
+                </div>
+    
+                <div class="omf__sect--restos"><a href="1_la-palette-du-gout.html">
+    
+                    <div class="omf__sect--img">
+                        <div class="omf__sect--nouveau">Nouveau</div>
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="omf__img--lapal" class="omf__img--contain1"> 
+                                         
+                    </div>
+    
+                    <div class="omf__sect--infos">
+    
+                        <div class="omf__sect--description">
+                            <div class="omf__sect--nom">La palette du goût</div>
+                            <div class="omf__sect--lieu">Ménilmontant</div>
+                        </div>
+    
+                        <div class="omf__sect--picto">
+                            <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
+                            <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div></a>
+                </div>
+    
+    
+                <div class="omf__sect--restos"><a href="2_la-note-enchantee.html">
+    
+                    <div class="omf__sect--img">
+                        <div class="omf__sect--nouveau">Nouveau</div>  
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="omf__img--lanote" class="omf__img--contain1">
+                                          
+                    </div>
+    
+                    <div class="omf__sect--infos">
+    
+                        <div class="omf__sect--description">
+                            <div class="omf__sect--nom">La note enchantée</div>
+                            <div class="omf__sect--lieu">Charonne</div>
+                        </div>
+    
+                        <div class="omf__sect--picto">
+                            <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
+                            <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div></a>
+    
+                </div>
+    
+    
+                <div class="omf__sect--restos"><a href="3_a-la-francaise.html">
+    
+                    <div class="omf__sect--img">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="omf__img--alafr" class="omf__img--contain1">
+                    </div>
+    
+                    <div class="omf__sect--infos">
+    
+                        <div class="omf__sect--description">
+                            <div class="omf__sect--nom">À la française</div>
+                            <div class="omf__sect--lieu">Cité Rouge</div>
+                        </div>
+    
+                        <div class="omf__sect--picto">
+                            <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
+                            <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div></a>
+    
+                </div>
+    
+    
+                <div class="omf__sect--restos"><a href="4_le-delice-des-sens.html">
+    
+                    <div class="omf__sect--img">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="omf__img--ledel" class="omf__img--contain1">
+                    </div>
+    
+                    <div class="omf__sect--infos">
+    
+                        <div class="omf__sect--description">
+                            <div class="omf__sect--nom">Le délice des sens</div>
+                            <div class="omf__sect--lieu">Folie-Méricourt</div>
+                        </div>
+    
+                        <div class="omf__sect--picto">
+                            <div class="omf__picto--solid"><i class="fas fa-heart"></i></div>
+                            <div class="omf__picto--regular"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div></a>
+                </div>
             </div>
-
-            <div class="omf__footer--partener">
-                <div class="omf_footer--picto"><i class="fas fa-hands-helping"></i></div>
-                <div class="omf_footer--text1">Devenir partenaire</div>
-            </div>
-
-            <div class="omf_footer--text">Mentions légales</div>
-
-            <div>
-                <a href="mailto:christophe.ordonnaud@gmail.com?subject=contact" class="omf_footer--text">Contact</a>
-            </div>
+        </section>
         
         
-        </div>
-
-
-
-    </footer>
+        <footer>
+            <div class="omf__footer">
+                
+                <div class="omf__logo--footer">
+                    <img src="images/logo/ohmyfood@2x.svg" alt="omf__logo" class="omf__imglog--contain1">
+                </div>
+    
+                <div class="omf__footer--propose">
+                    <div class="omf_footer--picto"><i class="fas fa-utensils"></i></div>
+                    <div class="omf_footer--text1">Proposer un restaurant</div>
+                </div>
+    
+                <div class="omf__footer--partener">
+                    <div class="omf_footer--picto"><i class="fas fa-hands-helping"></i></div>
+                    <div class="omf_footer--text1">Devenir partenaire</div>
+                </div>
+    
+                <div class="omf_footer--text">Mentions légales</div>
+    
+                <div>
+                    <a href="mailto:christophe.ordonnaud@gmail.com?subject=contact" class="omf_footer--text">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
