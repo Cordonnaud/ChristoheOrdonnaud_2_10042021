@@ -579,19 +579,26 @@ a {
 
 .omf__partie--item{
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     width:100%;
     height:auto;
     margin:20px 0px 20px 0px;
     background :#FFF;
     border-radius: 40px;
+    overflow:hidden;
+    flex-grow: 1;
+
 }
 .omf__item--description{
     display:flex;
-    max-width: 80%;
-    flex-direction:column;
+    flex-flow:column wrap;
     justify-self:flex-start;
+    overflow:hidden;
+    width: 100%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+
 }
 .omf__item--titre{
     font-size: 2.4rem;
@@ -601,49 +608,61 @@ a {
     overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap; 
+    width:100%;
+
 }
 .omf__item--infos{
     font-size: 2.4rem;
     padding: 0px 0px 20px 20px;
-    max-width:100%;
+    width:100%;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
 .omf__item--prival{
     display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateX(140px);
+    transition: all 300ms ease-in-out;
+    width:280px;
+    flex-shrink: 1;
 }
 .omf__item--prix{
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
     align-self: flex-end;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    width: 125px;
+    width: 100px;
     height: auto;
-    padding: 0px 20px 20px 0px;
+    padding: 0px 40px 20px 40px;
 }
 .omf__item--validation{
-    display:none;
+    display:flex;
     justify-content: center;
     align-items:center;
-    width: 125px;
+    width: 140px;
     height:auto;
     background-color: var(--select-back-clr);
     border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px; 
+    border-bottom-right-radius: 40px;
 }
 .fa-check-circle{
+    font-size:3rem;
     background-color: var(--select-back-clr);
     color:white;
+    transform: rotate;
+    transition: all 300ms ease-in-out;
 }
-.omf__partie--item:active .omf__item--validation{
-    display:flex;
+.omf__partie--item:hover .omf__item--prival{
+    transform: translateX(0px);
 }
-.omf__partie--item:active .omf__item--description{
-    max-width: 60%;
+.omf__partie--item:hover .fa-check-circle{
+     transform: rotate(360deg) 
 }
+    
 
 
 
