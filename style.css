@@ -587,35 +587,35 @@ a {
     background :#FFF;
     border-radius: 40px;
     overflow:hidden;
-    flex-grow: 1;
+    
 
 }
 .omf__item--description{
     display:flex;
     flex-flow:column wrap;
     justify-self:flex-start;
-    overflow:hidden;
-    width: 100%;
+    overflow-x:hidden;
+    width: auto;
     text-overflow:ellipsis;
     white-space: nowrap;
+    flex: 4 ;
 
 }
 .omf__item--titre{
     font-size: 2.4rem;
     font-weight: bold;
     padding: 20px 0px 10px 20px;
-    max-width:100%;
-    overflow:hidden;
+    width:100%;
+    overflow-x:hidden;
     text-overflow:ellipsis;
     white-space: nowrap; 
-    width:100%;
 
 }
 .omf__item--infos{
     font-size: 2.4rem;
     padding: 0px 0px 20px 20px;
     width:100%;
-    overflow:hidden;
+    overflow-x:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
@@ -626,7 +626,7 @@ a {
     transform: translateX(140px);
     transition: all 300ms ease-in-out;
     width:280px;
-    flex-shrink: 1;
+    flex: 1;
 }
 .omf__item--prix{
     display:flex;
