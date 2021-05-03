@@ -180,7 +180,7 @@ input {
     font-size: 2.4rem;
     text-align: center;
     margin: 20px;
-    padding: 0px 20px;
+    padding: 0px 20px 40px 20px;
 }
 .omf__btn{
     font-size: 2rem;
@@ -189,7 +189,7 @@ input {
     border-radius: 100px;
     width:max-content;
     height:100px;
-    margin: 20px 20px 120px 20px;
+    margin: 20px 20px 100px 20px;
     padding: 0px 60px 0px 50px;
     transition: all 300ms ease-in-out;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -200,13 +200,9 @@ input {
     margin: 60px 20px 80px 20px;
     padding: 0px 80px 0px 80px;
 }
-button:active{
+/* button:active{
     transform: scale(1.1);
-}
-
-
-
-
+} */
 
 
 .omf__nav{
@@ -216,7 +212,7 @@ button:active{
     align-content:flex-start;
     align-items:flex-start;
     max-width: 100%;
-    margin: 70px 0px 220px 0px;
+    margin: 40px 0px 40px 0px;
     padding: 0px 0px 0px 0px;
 }
 .omf__nav--fonctionnement{
@@ -309,24 +305,24 @@ section{
     align-content:flex-start;
     align-items:flex-start;
     max-width: 100%;
-    /* margin: 70px 40px 100px 0px; */
     background-color: var(--header-back-clr);
     padding: 0px 40px 100px 40px;
 }
 
 .omf__sect--restaurants{
     font-size: 2.5rem;
-    padding: 0px 0px 0px 40px;
+    padding: 40px 0px 0px 40px;
+    margin-bottom: 0px;
 }
 .omf__sect--restos{
     padding: 0px 0px 20px 0px;
-    /* margin-bottom: 50px; */
-    /* border: 1px SOLID #000; */
+    margin-bottom: 20px;
    
 }
 
 .omf__sect--img{ 
-    padding: 0px 0px ;  
+    padding: 0px 0px ; 
+    margin-bottom: -2px;
     
 }
 .omf__sect--nouveau{
@@ -341,6 +337,7 @@ section{
     z-index: 2;
     top:80px;
     Left: 75%;
+    margin-top: -50px;
 }
 a {
     text-decoration: none;
@@ -569,8 +566,6 @@ footer{
     max-width:100%;
     height:auto;
     font-size:2rem;
-    /* animation: omf__partie 1s forwards ease-in-out;
-    scale:0; */
 }
 .omf__partie--type{
     padding-top: 60px;
@@ -597,7 +592,7 @@ footer{
     height:auto;
     margin:20px 0px 20px 0px;
     background :#FFF;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 40px;
     overflow:hidden;
     position: relative;
@@ -608,12 +603,8 @@ footer{
 }
 @keyframes omf__item--tps1 {
    20%{
-       /* transform: translateY(-10px); */
         opacity: 0.5;
     }
-    /* 40%{
-        opacity: 1;
-    } */
     100%{
         transform: translateY(0px);
         opacity: 1;
@@ -683,7 +674,7 @@ footer{
     flex-flow:column wrap;
     justify-self:flex-start;
     overflow-x:hidden;
-    max-width: min-content;
+    width: 100%;
     text-overflow:ellipsis;
     white-space: nowrap;
 
@@ -693,7 +684,7 @@ footer{
     font-weight: bold;
     padding: 20px 0px 10px 20px;
     width:100%;
-    overflow-x:hidden;
+    overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap; 
 
@@ -701,8 +692,8 @@ footer{
 .omf__item--infos{
     font-size: 2.4rem;
     padding: 0px 0px 20px 20px;
-    width:100%;
-    overflow-x:hidden;
+    width: 100%;
+    overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
@@ -713,6 +704,7 @@ footer{
     transform: translateX(140px);
     transition: all 500ms ease-in-out;
     width:min-content;
+
 }
 .omf__item--prix{
     display:flex;
@@ -723,7 +715,8 @@ footer{
     font-weight: bold;
     width: min-content;
     height: auto;
-    padding: 0px 40px 20px 20px;
+    /* padding: 0px 40px 20px 20px; */
+    margin: 0px 25px 20px 0px;
 
 }
 .omf__item--validation{
