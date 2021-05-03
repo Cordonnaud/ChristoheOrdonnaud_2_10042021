@@ -9,12 +9,12 @@
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
-/* Portrait and Landscape 
+/* Portrait and Landscape */
 
-@media only screen 
+/* @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px) 
-  {*/
+  { */
 :root{
     
         --search-bar-clr: rgb(200, 200, 200);
@@ -83,7 +83,7 @@
     100% {
          transform: scale(.6);
     }
-}
+} 
 #content__menu{
     display:flex;
     flex-direction: column;
@@ -109,23 +109,30 @@
 
 
 
-.omf__head .omf__head--back {
+.omf__head, .omf__head--back {
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-content: center;
     align-items: center;
     width: 100%;
 }
 .omf__head--back{
     background-color: var(--header-back-clr);
-}
-.omf__logo{
-    display:flex;
-    flex-direction:row; 
     justify-content: center;
-    padding:10px 0px;
+}
+.omf__logo, .omf__logo--accueil, .omf__logo--menu{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width:100%; 
+    padding:20px 0px;
     margin-bottom: 20px;
+}
+.omf__logo--menu{
+    position:relative;
+    z-index: 3;
+    
 }
 .omf__head--search{
     background-color : var(--search-bar-clr);
@@ -175,7 +182,7 @@ input {
     margin: 20px;
     padding: 0px 20px;
 }
-.omf__head--text3{
+.omf__btn{
     font-size: 2rem;
     background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
     color: #FFF;
@@ -187,6 +194,11 @@ input {
     transition: all 300ms ease-in-out;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
+}
+.omf__btn--cmd{
+    align-self: center;
+    margin: 60px 20px 80px 20px;
+    padding: 0px 80px 0px 80px;
 }
 button:active{
     transform: scale(1.1);
@@ -292,9 +304,10 @@ button:active{
     justify-content:flex-start;
     align-content:flex-start;
     align-items:flex-start;
-    width: 100%;
-    margin: 70px 40px 100px 0px;
+    max-width: 100%;
+    /* margin: 70px 40px 100px 0px; */
     background-color: var(--header-back-clr);
+    padding: 0px 40px 0px 40px;
 }
 
 .omf__sect--restaurants{
@@ -310,7 +323,7 @@ button:active{
 section{
     position: relative;
     z-index: 2;
-    margin: 0px 0px -100px 0px;
+    /* margin: 0px 0px 0px 0px; */
 }
 .omf__sect--img{ 
     padding: 0px 0px ;  
@@ -409,14 +422,16 @@ a {
     opacity: 1;
     
 }
-
+footer{ 
+    position:relative;
+    z-index: 2;
+}
 
 
 
 
 .omf__footer{
-    /* position:relative;
-    z-index: 2; */
+   
     display:flex;
     flex-flow:column wrap;
     justify-content:flex-start;
@@ -490,19 +505,6 @@ a {
     margin: 0px 0px 0px 40px;
     padding-top: 10px;
 }
-.omf__logo1{
-    position:relative;
-    z-index: 3;
-    display: flex;
-    left:20%;
-    transform-origin: 50% 50%;
-    flex-direction: row;
-    align-items: center;
-    max-width:100%;
-    padding:20px 0px;
-}
-
-
 .omf__img--contain{
     position:relative;
     z-index: 1;
@@ -511,10 +513,6 @@ a {
     object-fit:cover;
     object-position: 50% 40%;
 }
-
-
-
-
 .omf__sect--menu{
     position:relative;
     z-index: 2;
@@ -562,11 +560,20 @@ a {
 .omf__partie{ 
     display:flex;
     flex-direction:column;
+    width:100%;
     max-width:100%;
     height:auto;
     font-size:2rem;
+    /* animation: omf__partie 1s forwards ease-in-out;
+    scale:0; */
+}
+.omf__partie--type{
+    padding-top: 60px;
+    position: relative;
+    z-index: 3;
 }
 .omf__partie--titre{
+    font-size:2.4rem;
     padding: 5px 0px;
 
 }
@@ -577,28 +584,103 @@ a {
     background-color: var(--select-back-clr);
 }
 
-.omf__partie--item{
+.omf__item{
     display:flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content:space-between;
     width:100%;
     height:auto;
     margin:20px 0px 20px 0px;
     background :#FFF;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 40px;
     overflow:hidden;
+    position: relative;
+    animation: omf__item 1.2s ease-in-out;
+    animation-delay: 2800ms;
+   
     
-
 }
+@keyframes omf__item--tps1 {
+   20%{
+       /* transform: translateY(-10px); */
+        opacity: 0.5;
+    }
+    /* 40%{
+        opacity: 1;
+    } */
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+@keyframes omf__item--tps2 {
+    40%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+@keyframes omf__item--tps3 {
+    60%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+@keyframes omf__item--tps4 {
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+.omf__item--tps1{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: omf__item--tps1 500ms forwards ease-in-out;
+    animation-delay: 2000ms;
+    
+}
+.omf__item--tps2{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: omf__item--tps2 600ms forwards ease-in-out;
+    animation-delay: 2200ms;
+   
+}
+.omf__item--tps3{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: omf__item--tps3 700ms forwards ease-in-out;
+    animation-delay: 2400ms;
+   
+}
+.omf__item--tps4{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: omf__item--tps4 800ms forwards ease-in-out;
+    animation-delay: 2600ms;
+    
+}
+
 .omf__item--description{
     display:flex;
     flex-flow:column wrap;
     justify-self:flex-start;
     overflow-x:hidden;
-    width: auto;
+    max-width: min-content;
     text-overflow:ellipsis;
     white-space: nowrap;
-    flex: 4 ;
 
 }
 .omf__item--titre{
@@ -622,22 +704,22 @@ a {
 .omf__item--prival{
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-self: flex-end;
     transform: translateX(140px);
-    transition: all 300ms ease-in-out;
-    width:280px;
-    flex: 1;
+    transition: all 500ms ease-in-out;
+    width:min-content;
 }
 .omf__item--prix{
     display:flex;
     justify-content: center;
-    align-items:flex-end;
-    align-self: flex-end;
+    align-items:flex-start;
+    align-self: flex-end; 
     font-size: 2.5rem;
     font-weight: bold;
-    width: 100px;
+    width: min-content;
     height: auto;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 40px 20px 20px;
+
 }
 .omf__item--validation{
     display:flex;
@@ -646,25 +728,17 @@ a {
     width: 140px;
     height:auto;
     background-color: var(--select-back-clr);
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
 }
 .fa-check-circle{
     font-size:3rem;
     background-color: var(--select-back-clr);
     color:white;
     transform: rotate;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
-.omf__partie--item:hover .omf__item--prival{
+.omf__item:hover .omf__item--prival{
     transform: translateX(0px);
 }
-.omf__partie--item:hover .fa-check-circle{
+.omf__item:hover .fa-check-circle{
      transform: rotate(360deg) 
 }
-    
-
-
-
-
-
