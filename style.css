@@ -1,9 +1,4 @@
-body{
-    display: flex;
-    flex-direction: column;
-    max-width:100%;
-    font-family:'Roboto', sans-serif;
-}
+
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
@@ -13,7 +8,8 @@ body{
   and (min-device-width: 320px) 
   and (max-device-width: 480px) 
   {
-:root{
+    
+    :root{
     
         --search-bar-clr: rgb(200, 200, 200);
         --header-back-clr: rgb(230, 230, 230);
@@ -23,6 +19,12 @@ body{
         --select-txt-clr :#054938;
       }     
         
+body{
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    font-family:'Roboto', sans-serif;
+}
 .loading_spinner{
     position:fixed;
     top:0%;
@@ -713,7 +715,6 @@ footer{
     font-weight: bold;
     width: min-content;
     height: auto;
-    /* padding: 0px 40px 20px 20px; */
     margin: 0px 25px 20px 0px;
 
 }
@@ -739,6 +740,9 @@ footer{
 .omf__item:active .fa-check-circle{
      transform: rotate(360deg) 
 }
+}
+
+
 
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°ACCUEIL TABLETTE °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 @media only screen 
@@ -748,95 +752,5 @@ footer{
 .loading_spinner{
     display:none
 }
-.omf__head, .omf__head--back {
-    display:flex;
-    flex-direction:column;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-}
-.omf__head--back{
-    background-color: var(--header-back-clr);
-    justify-content: center;
-}
-.omf__logo, .omf__logo--accueil, .omf__logo--menu{
-    font-size: 10rem;
-    /* display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    width:100%; 
-    padding:20px 0px;
-    margin-bottom: 20px; */
-}
-.omf__logo--menu{
-    position:relative;
-    z-index: 3;
-    
-}
-.omf__head--search{
-    background-color : var(--search-bar-clr);
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    height:100px;
-}
-.omf__head--pointeur {
-    display:flex; 
-    flex-direction:row; 
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 2.4rem;
-    width: 200px;
-    padding:0px 0px;
-    margin:0px;
-}
-input {
-    width: 75%;
-    font-size: 2.4rem;
-    border: none;
-    background-color : var(--search-bar-clr);
-    padding:0px 20px;
-    margin: 0px 20px;
 
-}
-::placeholder {
-    color:#000;
-    align-items: center;
-    
-}
-.omf__head--text1{
-    font-size: 4rem;
-    font-weight: bold;
-    height:min-content;
-    text-align: center;
-    margin: 50px 20px 20px 20px;
-    padding: 0px 50px;
-}
-.omf__head--text2{
-    font-size: 2.4rem;
-    text-align: center;
-    margin: 20px;
-    padding: 0px 20px 40px 20px;
-}
-.omf__btn{
-    font-size: 2rem;
-    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
-    color: #FFF;
-    border-radius: 100px;
-    width:max-content;
-    height:100px;
-    margin: 20px 20px 100px 20px;
-    padding: 0px 60px 0px 50px;
-    transition: all 300ms ease-in-out;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-}
-.omf__btn--cmd{
-    align-self: center;
-    margin: 60px 20px 80px 20px;
-    padding: 0px 80px 0px 80px;
 }
