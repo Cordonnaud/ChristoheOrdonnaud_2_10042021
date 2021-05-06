@@ -759,8 +759,7 @@ footer{
   and (min-device-width: 481px) 
   and (max-device-width: 1024px) 
   {
-
-    body{
+body{
     display:flex;
     flex-direction: column;
     font-family:'Roboto', sans-serif;
@@ -1422,4 +1421,6 @@ a {
 .omf__item:active .fa-check-circle{
      transform: rotate(360deg) 
 }
+
+
 
