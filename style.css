@@ -506,7 +506,7 @@ footer{
     margin: 0px 0px 0px 40px;
     padding-top: 10px;
 }
-.fa-home{
+.omf___head--home{
     display:none;
 }
 
@@ -1119,7 +1119,7 @@ a {
     height: auto;
     background: var(--search-bar-clr);
 }
-.fa-arrow-left{
+.omf___head--arrow{
     display:none;
 }
 .omf__header--return{
