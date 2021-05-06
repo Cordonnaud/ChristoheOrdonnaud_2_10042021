@@ -1248,7 +1248,7 @@ a {
     justify-content:space-between;
     width:100%;
     height:auto;
-    margin:20px 0px 20px 0px;
+    margin:40px 0px 20px 0px;
     background :#FFF;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 20px;
@@ -1259,7 +1259,7 @@ a {
 .omf__item--dessert{
     display:flex;
     flex-flow: row wrap;
-    width:auto;
+    width:min-content;
     justify-content:space-between;
     height:auto;
     margin:0px 10px 0px 0px;
@@ -1416,18 +1416,19 @@ a {
     /* background-color: var(--select-back-clr); */
 }
 .fa-check-circle{
-    font-size:1.5rem;
+    font-size:1.8rem;
     /* background-color: var(--select-back-clr); */
-    color:var(--butt-back-clr);
+    color:var(--hover-back-clr);
     transform: rotate;
-    transition: all 500ms ease-in-out;
+    transition: all 200ms  ease-in-out ;
 }
 /* .omf__item:active .omf__item--prival{
     transform: translateX(-140px); */
 
 }
 .omf__item:active .fa-check-circle{
-     transform: rotate(360deg) 
+     transform: rotate(360deg);
+     color:var(--butt-back-clr);
 }
 
 .omf__btn--cmd{
