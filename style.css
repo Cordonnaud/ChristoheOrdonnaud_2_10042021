@@ -1434,6 +1434,8 @@ ACCUEIL DESKTOP
   and (min-device-width: 1025px) 
   and (max-device-width: 1580px)
   {
+ 
+
 body{
     display:flex;
     flex-direction: column;
@@ -1457,27 +1459,26 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: var(--search-bar-clr);
+    
 }
 .omf__imglog--contain{
     font-size: rem;
     padding: 40px 0px;
 }
-
 .omf__head--back{
     display:flex;
     flex-flow: row wrap;
     max-width: 100%;
     justify-content: center;
     align-items: baseline;
-    margin-top: 20px;
+    background-color: var(--search-bar-clr);
 }
-
 .omf__head--text1{
     width:100%;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 1rem;
 }
 .omf__head--text2{
     width:100%;
@@ -1490,41 +1491,46 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: baseline;
     order: 2;
-    width:60%;
+    width:100%;
     margin-top: 2rem;
 }
 .omf__head__btn{
+    display:none;
     height:auto;
     font-size: 1.2rem;
-    padding: 10px 20px 5px 20px;
-    margin-right: 20px;
-    text-align:justify;
+    padding: 10px 20px 10px 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .omf__head--pointeur{
-    display:none;
+    display:flex;
+    height:auto;
+    font-size: 2rem;
 }
 input{
     height:auto;
     font-size: 1.5rem;
-    padding: 5px 0px;
-    margin-left: 60px;
+    padding: 10px 0px;
+    margin-left: 50px;
     text-align:center;
+    background-color: var(--hover-back-clr);
+    border-radius: 10px;
 }
 .omf__btn--head{
     order:4;
-    height:auto;
-    font-size: 1rem;
+    width:80%;
+    height:50px;
+    font-size: 1.5rem;
     padding:10px 20px;
     text-align:center;
-    margin-top: 3rem;
-    margin-right: 1rem;
+    margin: 2rem 0rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    border-radius: 15px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+    color: #FFF;
 }
 .omf__nav{
     display:flex;
@@ -1781,5 +1787,9 @@ a {
 
 
 
-
 }
+
+
+
+
+
