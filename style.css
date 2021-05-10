@@ -16,9 +16,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
 
 
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) 
+@media screen and (max-width: 480px) 
   {
      
         
@@ -190,7 +188,7 @@ input {
 }
 .omf__btn{
     
-    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+    background: linear-gradient(#d966e4, #9356DC);
     color: #FFF;
     align-self: center;
     width:max-content;
@@ -215,9 +213,10 @@ input {
 
    
 }
-/* button:active{
-    transform: scale(1.1);
-} */
+button:hover{
+    background-color: var(--hover-back-clr);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
 
 
 .omf__nav{
@@ -275,6 +274,7 @@ input {
     height:auto;
     color: grey;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 300ms ease-in-out;
 
 }
 .omf__nav--box:hover .omf__nav--etiq{
@@ -463,7 +463,7 @@ footer{
     font-size: 2rem;
     display:flex;
     flex-flow:row wrap;
-    justify-content:baseline;
+    justify-content:center;
     align-items: center;
     padding: 0px 40px 20px 40px;
 }
@@ -471,7 +471,7 @@ footer{
     font-size: 2rem;
     display:flex;
     flex-flow:row wrap;
-    justify-content:baseline;
+    justify-content:center;
     align-items: center;
     padding: 0px 40px 20px 40px;
 }
@@ -743,7 +743,6 @@ MENU MOBILE
     font-size:3rem;
     background-color: var(--select-back-clr);
     color:white;
-    transform: rotate;
     transition: all 500ms ease-in-out;
 }
 .omf__item:active .omf__item--prival{
@@ -769,9 +768,9 @@ ACCUEIL TABLETTE
 
 
 
-@media only screen 
-  and (min-device-width: 481px) 
-  and (max-device-width: 1024px)
+@media screen 
+  and (min-width: 481px) 
+  and (max-width: 1024px)
   {
 body{
     display:flex;
@@ -799,7 +798,7 @@ body{
     background-color: var(--search-bar-clr);
 }
 .omf__imglog--contain{
-    font-size: rem;
+    /* font-size: rem; */
     padding: 40px 0px;
 }
 .omf__head--back{
@@ -954,7 +953,7 @@ section{
     padding: 0px 0px 0px 0px;
     margin:20px 20px 60px 20px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    transform: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 
 }
 .omf__sect--restos:hover{
@@ -1111,7 +1110,7 @@ a {
     color:var(--search-bar-clr);
     font-size: 1.2rem;
     padding: 0px 20px 0px 20px;
-}
+} 
 
 /*MENU TABLETTE
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
@@ -1207,7 +1206,7 @@ a {
 .omf__partie--type{
     display: flex;
     flex-direction: row;
-    justify-content:baseline;
+    justify-content:center;
     text-align: center;
     width:100%;
     font-size:2rem;
@@ -1373,7 +1372,6 @@ a {
     display:flex;
     justify-content:flex-start;
     text-align: center;
-    /* align-items:flex-start; */
     align-self: flex-end; 
     font-size: 1.5rem;
     font-weight: bold;
@@ -1394,7 +1392,6 @@ a {
 .fa-check-circle{
     font-size:1.8rem;
     color:var(--hover-back-clr);
-    transform: rotate;
     transition: all 200ms  ease-in-out ;
 }
 .omf__item:active .fa-check-circle{
@@ -1411,7 +1408,7 @@ a {
     
 }
 .omf__btn--cmd{
-    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+    background: linear-gradient(#c94fd4, #9356DC);
     color: #FFF;
     font-size: 2rem;
     width:80%;
@@ -1430,9 +1427,8 @@ ACCUEIL DESKTOP
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
 
-@media only screen 
-  and (min-device-width: 1025px) 
-  and (max-device-width: 1580px)
+@media  screen and (min-width: 1025px) 
+  and (max-width: 2048px)
   {
  
 
@@ -1462,7 +1458,7 @@ body{
     
 }
 .omf__imglog--contain{
-    font-size: rem;
+    /* font-size: rem; */
     padding: 40px 0px;
 }
 .omf__head--back{
@@ -1529,7 +1525,7 @@ input{
     margin: 2rem 0rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
-    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+    background: linear-gradient(#c94fd4, #9356DC);
     color: #FFF;
 }
 .omf__nav{
@@ -1575,18 +1571,18 @@ input{
     justify-content: center;
     align-items: center;
     /* width:40px; */
-    font-size: 2rem;
+     font-size: 2rem;
     margin: 0px 20px;
     font-weight: bold;
     border-radius: 5px;
 }
 .omf__nav--etiq{
     display:flex;
-    flex-direction: row;
+    flex-direction: row; 
     /* flex-wrap: wrap; */
     align-items:center;
     /* margin-bottom: 1rem; */
-  
+ 
 }.omf__nav--picto{
     color:var(--butt-back-clr);
     font-size: 2rem;
@@ -1791,7 +1787,7 @@ a {
     color:var(--search-bar-clr);
     font-size: 1.2rem;
     padding: 0px 20px 0px 20px;
-}
+} 
 
 
 /* 
@@ -1862,9 +1858,9 @@ MENU MOBILE
     flex-direction:row;
     width: 100px;
     height: 100px;
-    /* justify-content:center;
-    align-items:center; */
-    padding-left: 150px;
+    justify-content:center;
+    align-items:center;
+    padding-left: 150px; 
     
 }
 .omf__sect--picto1:hover .omf__picto--regular{
@@ -1885,7 +1881,7 @@ MENU MOBILE
     flex-direction:column;
     width:30%;
     align-items: center;
-} */
+}  */
 .omf__partie--type{
     display: flex;
     flex-direction: row;
@@ -1906,7 +1902,6 @@ MENU MOBILE
     display: none;
 }
 .omf__carte{
-    
     margin:0px 20px 20px 10px;
 }
 /* .omf__carte--dessert{
@@ -2076,7 +2071,6 @@ MENU MOBILE
 .fa-check-circle{
     font-size:1.8rem;
     color:var(--hover-back-clr);
-    transform: rotate;
     transition: all 200ms  ease-in-out ;
 }
 .omf__item:active .fa-check-circle{
@@ -2091,7 +2085,7 @@ MENU MOBILE
     
 }
 .omf__btn--cmd{
-    background: linear-gradient(0deg, var(--butt-back-clr),#c94fd4);
+    background: linear-gradient(#c94fd4, #9356DC);
     color: #FFF;
     font-size: 2rem;
     width:80%;
