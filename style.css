@@ -16,7 +16,9 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
 
 
 
-@media screen and (max-width: 480px) 
+@media screen 
+and (min-width: 320px) 
+and (max-width: 480px) 
   {
       body{
     display: flex;
@@ -454,7 +456,6 @@ footer{
 
 }
 .omf__footer--propose {
-    /* font-size: 1em; */
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -462,7 +463,6 @@ footer{
     padding: 0em 0em .8em 2em;
 }
 .omf__footer--partener{
-    /* font-size: 1em; */
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -492,7 +492,7 @@ MENU MOBILE
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
-
+    align-items: center;
     width: 100%;
     height: auto;
     background: white;
@@ -500,9 +500,9 @@ MENU MOBILE
 .omf__header--return{
     /* position:relative;
     z-index: 4; */
-    font-size: 3rem;
-    margin: 0px 0px 0px 40px;
-    padding-top: 10px;
+    font-size: 2em;
+    margin: 0em 0em 0em 1em;
+    padding-top: .5em;
 }
 .omf__head--home{
     display: none;
@@ -512,7 +512,7 @@ MENU MOBILE
     /* position:relative;
     z-index: 1; */
     width:100%;
-    height:700px;
+    height:25em;
     object-fit:cover;
     object-position: 50% 40%;
 }
@@ -525,10 +525,10 @@ MENU MOBILE
     width:auto;
     height: auto;
     background: var(--header-back-clr);
-    border-top-left-radius:70px;
-    border-top-right-radius:70px;
-    padding:  0px 40px 0px 40px;
-    margin: 0px 0px -100px 0px;
+    border-top-left-radius:3em;
+    border-top-right-radius:3em;
+    padding:  0em 3em 0em 3em;
+    margin: 0em 0em -5em 0em;
 }
 .omf__entete--menu{
     display:flex;
@@ -541,7 +541,7 @@ MENU MOBILE
  .omf__entete--nom{
     width: 100%;
     font-family:'Shrikhand', sans-serif;
-    font-size: 2.4rem;
+    font-size:1em;
 }
 .omf__sect--picto1{
     display:flex;
@@ -550,7 +550,7 @@ MENU MOBILE
     height: 3em;
     justify-content:center;
     align-items:center;
-    padding-right: 40px;
+    padding-right: 3em;
     
 }
 .omf__sect--picto1:hover .omf__picto--regular{
@@ -567,40 +567,24 @@ MENU MOBILE
     width:100%;
     max-width:100%;
     height:auto;
-    font-size:2rem;
 }
 .omf__partie--type{
-    padding-top: 60px;
+    padding-top: 1em;
     position: relative;
     z-index: 3;
 }
 .omf__partie--titre{
-    font-size:2.4rem;
-    padding: 5px 0px;
+    font-size:1em;
+    padding: 0em 0em;
 
 }
 .omf__partie--underline{
-    width:100px;
-    height:7px;
-    margin: 5px 0px;
+    width:2.5em;
+    height:.2em;
+    margin: .5em 0em;
     background-color: var(--select-back-clr);
 }
 
-.omf__item{
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content:space-between;
-    width:100%;
-    height:auto;
-    margin:40px 0px 20px 0px;
-    background :#FFF;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    border-radius: 40px;
-    overflow:hidden;
-    position: relative;
-    animation: omf__item 1.2s ease-in-out;
-    animation-delay: 2800ms;
-}
 @keyframes omf__item--tps1 {
    20%{
         opacity: 0.5;
@@ -670,73 +654,116 @@ MENU MOBILE
     animation: omf__item--tps4 800ms forwards ease-in-out;
     animation-delay: 2600ms;
 }
+.omf__item{
+    display:flex;
+    flex-flow: row nowrap;
+    /* justify-content:flex-start; */
+    width:100%;
+    height:auto;
+    margin:1.2em 0em 1em 0em;
+    background :#FFF;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 2em;
+    overflow:hidden;
+    /* position: relative; */
+    /* animation: omf__item 1.2s ease-in-out;
+    animation-delay: 2800ms; */
+    border: 2px solid greenyellow;
+    
+}
 .omf__item--description{
     display:flex;
     flex-flow:column wrap;
-    justify-self:flex-start;
+    /* justify-self:flex-start; */
     width:100%;
     overflow:hidden;
+    /* flex:1; */
+    position: relative;
+    z-index: 1;
+    border: 2px solid brown;
+
 }
+
 .omf__item--titre{
-    font-size: 2.4rem;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 20px 0px 10px 20px;
-    width:100%;
+    /* width:100%; */
     overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
+    /* flex:1;
+    position: relative;
+    z-index: 1; */
+    border: 2px solid red;
+    
+
 }
 .omf__item--infos{
-    font-size: 2.4rem;
+    width:100%;
+    font-size: 1em;
     padding: 0px 0px 20px 20px;
-    width: 100%;
+    /* width: 100%; */
     overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
+    /* flex:1; */
+    /* position: relative; */
+    /* z-index: 1; */
+    border: 2px solid red;
+
 }
 .omf__item--prival{
     display:flex;
     flex-direction: row;
     justify-self: flex-start;
     transition: all 500ms ease-in-out;
-    width:min-content;
+    width:10em;
+    left: 5em; 
     position: relative;
-    left: 140px;
+    /* z-index: 1; */
+    border: 2px solid aqua;
 }
 .omf__item--prix{
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items:flex-start;
     align-self: flex-end; 
-    font-size: 2.5rem;
+    /* position: relative;
+    z-index: 1; */
+    font-size:1em;
     font-weight: bold;
     width: min-content;
     height: auto;
-    margin: 0px 25px 20px 0px;
+    margin: 0px 25px 20px 25px;
+    border: 2px solid blue;
 
 }
 .omf__item--validation{
     display:flex;
     justify-content: center;
     align-items:center;
-    width: 140px;
+    width:10em;
     height:auto;
     background-color: var(--select-back-clr);
+    /* position: relative;
+    z-index: 1; */
 }
 .fa-check-circle{
-    font-size:3rem;
+    font-size:2em;
     background-color: var(--select-back-clr);
     color:white;
     transition: all 500ms ease-in-out;
 }
 .omf__item:active .omf__item--prival{
-    transform: translateX(-140px);
+    transform: translateX(-5em);
 
 }
 .omf__item:active .fa-check-circle{
      transform: rotate(360deg) 
 }
-}
+  }
+
 
 
 
@@ -1095,7 +1122,7 @@ a {
     color:var(--search-bar-clr);
     font-size: 1.2rem;
     padding: 0px 20px 0px 20px;
-} 
+}  
 
 /*MENU TABLETTE
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
