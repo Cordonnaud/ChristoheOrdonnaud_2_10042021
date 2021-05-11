@@ -25,8 +25,9 @@ body{
     flex-direction: column;
     max-width:100%;
     font-family:'Roboto', sans-serif;
+    font-size: 15px;
 }
-.loading_spinner{
+/* .loading_spinner{
     position:fixed;
     top:0%;
     left:0%;
@@ -44,7 +45,7 @@ body{
     z-index: 2;
     opacity:1;
     color: #9356DC;
-    font-size: 6rem;
+    font-size: 4em;
     animation: anim-scale 1500ms infinite ease-in-out;
 }
   .fa-spinner{ 
@@ -52,7 +53,7 @@ body{
     z-index: 3;
     color: #e2cfe7;
     opacity:1;
-    font-size: 20rem;
+    font-size: 10em;
     animation: anim-rotate 1300ms infinite linear;
 }
 @keyframes anim-spin {
@@ -105,7 +106,7 @@ body{
     100% {
         opacity:1;
     }
-}
+} */
 
 
 
@@ -127,44 +128,47 @@ body{
     justify-content: center;
     align-items: center;
     width:100%; 
-    padding:20px 0px;
-    margin-bottom: 20px;
+    padding:0px 0px;
+    margin: 40px 0px 20px 0px;
 }
 .omf__logo--menu{
     position:relative;
     z-index: 3;
     
 }
+.omf__imglog--contain{
+    width: 50%;
+    object-fit:cover;
+}
 .omf__head--search{
     background-color : var(--search-bar-clr);
     display:flex;
     flex-direction:row;
     justify-content: center;
-    align-content: center;
-    align-items: center;
     width: 100%;
-    height:100px;
 }
 .omf__head--pointeur {
     display:flex; 
     flex-direction:row; 
     justify-content: flex-end;
     align-items: center;
-    font-size: 2.4rem;
-    width: 200px;
-    padding:0px 0px;
-    margin:0px;
+    font-size: 1.2em;
+    width: max-content;
+    padding:0em 0em 0em 1em;
+    margin: 0em 0em 0em 2em;
 }
 .omf__head__btn{
     display:none
 }
 input {
-    width: 75%;
-    font-size: 2.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 1.2em;
     border: none;
     background-color : var(--search-bar-clr);
-    padding:0px 20px;
-    margin: 0px 20px;
+    padding:0em 0em 0em 0em;
+    margin: 0em 0em 0em 2em;
 
 }
 ::placeholder {
@@ -173,18 +177,18 @@ input {
     
 }
 .omf__head--text1{
-    font-size: 4rem;
-    font-weight: bold;
+    font-size:1.8em;
+    font-weight:bold;
     height:min-content;
     text-align: center;
-    margin: 50px 20px 20px 20px;
-    padding: 0px 50px;
+    margin: 1.5em 0em 0em 0em;
+    padding: 0em 2.5em 0em 2.5em;
 }
 .omf__head--text2{
-    font-size: 2.4rem;
+    font-size: 1.2em;
     text-align: center;
-    margin: 20px;
-    padding: 0px 20px 40px 20px;
+    margin: 1em 0em 0em 0em;
+    padding: 0em 2.5em 0em 2.5em;
 }
 .omf__btn{
     
@@ -197,21 +201,19 @@ input {
     
 }
 .omf__btn--head, .omf__btn--cmd{
-    
-    font-size: 2.2rem;
-    height:100px;
-    border-radius: 100px;
+    font-size: 1em;
+    height:3em;
+    border-radius:5em;
 }
 .omf__btn--head{
-    font-size: 2rem;
-    margin: 20px 20px 100px 20px;
-    padding: 0px 50px 0px 50px;
+    font-size: 1em;
+    margin: 2em 0em 4em 0em;
+    padding: 0em 2em 0em 2em;
 }
 .omf__btn--cmd{
-    margin: 80px 20px 80px 20px;
-    padding: 0px 100px 0px 100px;
-
-   
+    font-size: 1em;
+    margin: 2em 0em 4em 0em;
+    padding: 0em 4em 0em 4em;
 }
 button:hover{
     background-color: var(--hover-back-clr);
@@ -226,36 +228,37 @@ button:hover{
     align-content:flex-start;
     align-items:flex-start;
     max-width: 100%;
-    margin: 40px 0px 40px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 1em 0em 1em 0em;
+    padding: 0em 0em 0em 0em;
 }
 .omf__nav--fonctionnement{
     max-width:100%;
     margin: 0px 0px 20px 0px;
     padding: 0px 0px 0px 40px;
-    font-size: 2.5rem;
+    font-size: 1em;
 }
 .omf__nav--box{
     display:flex;
     flex-flow:row wrap;
-    align-items:baseline;
+    align-items:center;
     min-width:100%;
-    margin: 0px 0px 70px 0px;
-    padding: 0px 0px 0px 20px;
+    margin: 0em 0em 5em 0em;
+    padding: 0em 0em 0em 1.5em;
+}
 }
 .omf__nav--num {
     position:relative;
-    left:30px;
+    left: 1em;
     z-index: 1;
     display:flex; 
     flex-direction:row; 
     justify-content: center;
     align-items: center;
-    font-size: 2.1rem;
-    width:70px;
-    height:70px;
+    font-size: 1.2em;
+    width:2em;
+    height:2em;
     background-color: var(--butt-back-clr);
-    border-radius: 35px;
+    border-radius: 3em;
     color:#FFF;
 
 
@@ -266,11 +269,10 @@ button:hover{
     display:flex; 
     flex-direction:row; 
     justify-content: flex-start;
-    align-items: center;
     background-color: var(--header-back-clr);
     width:80%;
-    border-radius: 45px;
-    padding: 40px 20px;
+    border-radius: 2em;
+    padding: 2em 0em;
     height:auto;
     color: grey;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -286,10 +288,10 @@ button:hover{
     flex-direction:row; 
     justify-content: center;
     align-items: center;
-    font-size: 2.2rem;
-    width:60px;
-    height:60px;
-    margin: 0px 40px 0px 40px;
+    font-size: 2em;
+    /* width:4em;
+    height:4em; */
+    margin: 0em 1em 0em 1.5em;
     color: grey;
 }
 .omf__nav--box:hover .omf__nav--picto{
@@ -300,7 +302,7 @@ button:hover{
     flex-direction:row; 
     justify-content: center;
     align-items: center;
-    font-size: 2.2rem;
+    font-size:1em;
     color:#000;
 }
 section{
@@ -453,14 +455,14 @@ footer{
 }
 .omf_footer--picto{
     color:var(--search-bar-clr);
-    font-size: 1.8rem;
+    font-size: 1rem;
     width: min-content;
     height:min-content;
     padding: 0px 0px 0px 0px;
 
 }
 .omf__footer--propose {
-    font-size: 2rem;
+    font-size: 1rem;
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -468,7 +470,7 @@ footer{
     padding: 0px 40px 20px 40px;
 }
 .omf__footer--partener{
-    font-size: 2rem;
+    font-size: 1rem;
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -477,13 +479,13 @@ footer{
 }
 .omf_footer--text1 {
     color:var(--search-bar-clr);
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 0px 20px 0px 20px;
 }
 .omf_footer--text {
     color:var(--search-bar-clr);
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding: 0px 20px 30px 40px;
 }
 
