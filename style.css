@@ -1885,8 +1885,6 @@ MENU DESKTOP
     height: 100px;
     padding: 0em 3em 0em 0em ;
 }
-    
-}
 .omf__sect--picto1:hover .omf__picto--regular{
     opacity: 0;
     
@@ -1900,12 +1898,7 @@ MENU DESKTOP
     flex-direction:column;
     width:30%;
 }
-/* .omf__partie--dessert{ 
-    display:flex;
-    flex-direction:column;
-    width:30%;
-    align-items: center;
-}  */
+
 .omf__partie--type{
     display: flex;
     flex-direction: row;
@@ -1928,13 +1921,7 @@ MENU DESKTOP
 .omf__carte{
     margin:0px 10px 10px 10px;
 }
-/* .omf__carte--dessert{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:space-between; 
-    
-}*/
+
 .omf__item{
     display:flex;
     flex-flow: row wrap;
@@ -1949,15 +1936,7 @@ MENU DESKTOP
     animation: omf__item 1.2s ease-in-out;
     animation-delay: 2800ms;
 }
-/* .omf__item--dessert{
-    display:flex;
-    flex-flow: row wrap;
-    width:min-content;
-    justify-content:space-between;
-    height:auto;
-    margin:0px 10px 0px 0px;
-     
-}*/
+
 @keyframes omf__item--tps1 {
    20%{
         opacity: 0.5;
