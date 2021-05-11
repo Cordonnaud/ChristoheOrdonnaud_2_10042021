@@ -242,7 +242,7 @@ button:hover{
     flex-flow:row wrap;
     align-items:center;
     min-width:100%;
-    margin: 0em 0em 5em 0em;
+    margin: 0em 0em 2em 0em;
     padding: 0em 0em 0em 1.5em;
 }
 .omf__nav--num {
@@ -788,6 +788,7 @@ body{
     display:flex;
     flex-direction: column;
     font-family:'Roboto', sans-serif;
+    font-size: 20px;
 }
 .loading_spinner{
     display:none
@@ -800,6 +801,7 @@ body{
 .omf__head{
     display:flex;
     flex-direction: column;
+    justify-content: center ;
     width: 100%;
 }
 .omf__logo--accueil{
@@ -810,8 +812,8 @@ body{
     background-color: var(--search-bar-clr);
 }
 .omf__imglog--contain{
-    /* font-size: rem; */
-    padding: 40px 0px;
+    width: 50%;
+    padding: 20px 0px;
 }
 .omf__head--back{
     display:flex;
@@ -823,13 +825,13 @@ body{
 }
 .omf__head--text1{
     width:100%;
-    font-size: 3rem;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
 }
 .omf__head--text2{
     width:100%;
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight:normal;
     text-align: center;
     margin-top: 2rem;
@@ -838,17 +840,17 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: baseline;
     order: 2;
     width:60%;
-    margin-top: 2rem;
+    margin-top: 1em;
 }
 .omf__head__btn{
     height:auto;
-    font-size: 1.2rem;
+    font-size: 1em;
     padding: 10px 20px 5px 20px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-align:justify;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 15px;
@@ -858,19 +860,19 @@ body{
 }
 input{
     height:auto;
-    font-size: 1.5rem;
+    font-size: 1em;
     padding: 5px 0px;
-    margin-left: 60px;
+    margin: 0px 30px;
     text-align:center;
 }
 .omf__btn--head{
     order:4;
     height:auto;
-    font-size: 1rem;
+    font-size: 1em;
     padding:10px 20px;
     text-align:center;
-    margin-top: 3rem;
-    margin-right: 1rem;
+    margin-top: 1em;
+    margin:0em 4em;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 15px;
 }
@@ -881,13 +883,13 @@ input{
     justify-content: space-around;
     width: 100%;
     background-color: var(--hover-back-clr);
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 2em;
+    padding-bottom: 2em;
 
 }
 .omf__nav--fonctionnement{
     width:100%;
-    font-size: 1.5rem;
+    font-size: 1em;
     text-align: center;
     margin-top: -.5rem;
 
@@ -900,16 +902,17 @@ input{
     border: 1px solid black;
     border-radius: 10px;
     padding:5px 0px 0px 0px;
+    margin: .3em;
 }
 .omf__nav--num{
     display:flex; 
     flex-direction:row; 
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1em;
     font-weight: bold;
-    width:30px;
-    height:30px;
+    width:1.5em;
+    height:1.5em;
     border: 1px solid var(--butt-back-clr);
     color:var(--butt-back-clr);
     background-color: white;
@@ -955,13 +958,13 @@ section{
 
 .omf__sect--restaurants{
     width:100%;
-    font-size: 1.5rem;
+    font-size: 1em;
     padding: 20px 0px 0px 0px;
     margin-bottom: 0px;
     text-align: center;
 }
 .omf__sect--restos{
-    width: 40%;
+    width: 350px;
     padding: 0px 0px 0px 0px;
     margin:20px 20px 60px 20px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -1039,25 +1042,24 @@ a {
     align-items:center; 
     width: 50px;
     height:auto;
+    padding: 0px 20px 0px 0px;
 }
 .omf__picto--solid{
     position: absolute;
     z-index: 4;
-    font-size: 2rem;
+    font-size: 1em;
     color:var(--butt-back-clr);
     opacity:0;
     transition: all 500ms ease-in-out;
-    padding: 0px 20px 0px 0px;
     
 }
 .omf__picto--regular{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 1em;
     color: rgb(160, 160, 160) ; 
     opacity:1;
     transition: all 500ms ease-in-out;
-    margin: 0px 20px 0px 0px;
 }
 .omf__sect--picto:hover .omf__picto--regular{
     opacity: 0;
@@ -1126,7 +1128,10 @@ a {
 
 /*MENU TABLETTE
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
-
+.omf__imglog--contain{
+    width: 40%;
+    padding: 20px 0px;
+}
 .omf__head--menu{
     display:flex;
     flex-direction:row;
@@ -1142,7 +1147,7 @@ a {
     display:flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3rem;
+    font-size: 3em;
     margin: 0px 0px 0px 40px;
     padding-top: 0px;
 }
@@ -1157,7 +1162,7 @@ a {
 
 .omf__img--contain{
     width:100%;
-    height:500px;
+    height:300px;
     object-fit:cover;
 }
 .omf__sect--menu{
@@ -1225,7 +1230,7 @@ a {
 
 }
 .omf__partie--titre{
-    font-size:1.4rem;
+    font-size:1em;
     padding: 5px 10px;
     margin-left: 10px;
 
@@ -1233,7 +1238,7 @@ a {
 .omf__partie--underline{
     width:90%;
     align-self: center;
-    height:7px;
+    height:1em;
     margin: 5px 10px 0px 0px;
     background-color: var(--select-back-clr);
 }
@@ -1347,17 +1352,17 @@ a {
     justify-content: space-around;
     align-items:center;
     width:100%;
-    padding-top: 1rem;
+    padding-top: 1em;
 }
 .omf__item--titre{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 0px 0px 0px 0px;
     width:100%;
-    padding-bottom: .5rem;
+    padding-bottom: .5em;
   
 }
 .omf__item--infos{
@@ -1365,7 +1370,7 @@ a {
    
     justify-content: center;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2em;
     padding: 0px 0px 0px 0px;
     width: 100%;
 }   
@@ -1448,6 +1453,7 @@ body{
     display:flex;
     flex-direction: column;
     font-family:'Roboto', sans-serif;
+    font-size: 20px;
 }
 .loading_spinner{
     display:none
@@ -1456,6 +1462,10 @@ body{
     display:flex;
     flex-direction: column;
     width: 100%;
+}
+.omf__imglog--contain{
+    width: 40%;
+    padding: 30px 0px;
 }
 .omf__head{
     display:flex;
@@ -1482,33 +1492,35 @@ body{
     background-color: var(--search-bar-clr);
 }
 .omf__head--text1{
-    width:100%;
-    font-size: 3rem;
+    width:40%;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.8em;
 }
 .omf__head--text2{
-    width:100%;
-    font-size: 2rem;
+    width:40%;
+    font-size: 1em;
     font-weight:normal;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0.8em;
+    padding:  0px 10px 0px 10px;
 }
 .omf__head--search{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: baseline;
     order: 2;
-    width:100%;
-    margin-top: 2rem;
+    width:40%;
+    margin-top: 0em;
+    margin-right: 2em;
 }
 .omf__head__btn{
     display:none;
     height:auto;
-    font-size: 1.2rem;
+    font-size: .8em;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
@@ -1516,25 +1528,25 @@ body{
 .omf__head--pointeur{
     display:flex;
     height:auto;
-    font-size: 2rem;
+    font-size: 1em;
 }
 input{
     height:auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10px 0px;
-    margin-left: 50px;
+    margin-left: 20px;
     text-align:center;
     background-color: var(--hover-back-clr);
     border-radius: 10px;
 }
 .omf__btn--head{
     order:4;
-    width:80%;
+    width:40%;
     height:50px;
-    font-size: 1.5rem;
+    font-size: .8em;
     padding:10px 20px;
     text-align:center;
-    margin: 2rem 0rem;
+    margin: 0em 0em;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
     background: linear-gradient(#c94fd4, #9356DC);
@@ -1549,16 +1561,16 @@ input{
     background-color: var(--hover-back-clr);
     margin-top: .5rem;
     margin-bottom: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
 
 }
 .omf__nav--fonctionnement{
     flex-direction: row;
     text-align: center;
     width:100%;
-    font-size: 2.5rem;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+    font-size: 1em;
+    margin-top: -.50em;
+    margin-bottom: -.50em;
 
 }
 .omf__nav--box {
@@ -1573,8 +1585,8 @@ input{
     border: 1px solid var(--butt-back-clr);
     border-radius: 10px;
     color:var(--butt-back-clr);
-    padding:10px 0px 5px 0px; 
-    margin-bottom: 2rem;
+    padding:0px 0px 0px 0px; 
+    margin-bottom: 1em;
 
 }
 .omf__nav--num{
@@ -1582,9 +1594,10 @@ input{
     flex-direction:row; 
     justify-content: center;
     align-items: center;
-    /* width:40px; */
-     font-size: 2rem;
-    margin: 0px 20px;
+    width:auto;
+    height: auto;
+    font-size: 1em;
+    margin: 7px 10px 0px 10px;
     font-weight: bold;
     border-radius: 5px;
 }
@@ -1597,12 +1610,12 @@ input{
  
 }.omf__nav--picto{
     color:var(--butt-back-clr);
-    font-size: 2rem;
-    padding: 0px 10px;
+    font-size: 1em;
+    padding: 0px 5px 0px 5px;;
 }
 .omf__nav--text{
-    font-size: 1.2rem;
-    padding: 0px 10px;
+    font-size: 1em;
+    padding: 0px 10px 0px 0px;
 
 }
 section{
@@ -1627,23 +1640,25 @@ section{
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1em;
     margin-bottom: -100px;
 }
 .omf__sect--restos{
-    width: 600px;
-    margin: 0px 40px 80px 40px;
+    width: 40%;
+    margin: 0px 30px 30px 30px;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    border-radius: 40px;
+    border-radius: 30px;
    
     
    
 }
 
 .omf__sect--img{ 
+    width:auto;
+    height:auto;
     padding: 0px 0px ; 
-    margin-bottom: -2px;
+    margin-bottom: -5px;
     
 }
 .omf__sect--nouveau{
@@ -1651,10 +1666,10 @@ section{
     width: 100%;
     background-color: var(--select-back-clr ) ;
     color : var(--select-txt-clr );
-    font-size: 2.5rem;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
-    padding: 20px 0px ;
+    padding: 5px 0px ;
     z-index: 2;
     top:50px;
     Left: 0%;
@@ -1668,9 +1683,9 @@ a {
     position:relative;
     z-index: 1;
     width:100%;
-    height:500px;
+    height:15em;
     object-fit:cover;
-    object-position: 50% 62%;
+    object-position: 50% 55%;
     
 }
 .omf__sect--infos{
@@ -1680,24 +1695,23 @@ a {
     align-content:flex-start;
     align-items:baseline;
     max-width: 100%;
-    height:200px;
+    height:auto;
     background-color: #FFF;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+   
 }
 .omf__sect--description{
     display:flex;
     flex-flow:column wrap;
     width: 80%;
-    padding: 30px 0px 10px 40px;
+    padding: 10px 0px 20px 40px;
     flex:1;
 }
 .omf__sect--nom{
-    font-size: 3rem;
+    font-size: 1.5em;
     font-weight:bold;
 }
 .omf__sect--lieu{
-    font-size: 2.5rem;
+    font-size: 1.3em;
     padding: 10px 0px 0px 0px;
 }
 
@@ -1718,11 +1732,11 @@ a {
 .omf__picto--solid, .omf__picto--regular{
     display: flex;
     flex-direction: row;
-    padding: 30px 40px 0px 0px;
+    padding: 30px 00px 0px 0px;
     position: absolute;
-    font-size: 5rem;
+    font-size: 1.5em;
     transition: all 500ms ease-in-out;
-    width:100px;
+    width:auto;
     height:auto;
 }
 .omf__picto--solid{
@@ -1803,7 +1817,7 @@ a {
 
 
 /* 
-MENU MOBILE
+MENU DESKTOP
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
 .omf__head--menu{
@@ -1836,8 +1850,10 @@ MENU MOBILE
 
 .omf__img--contain{
     width:100%;
-    height:500px;
+    height:300px;
     object-fit:cover;
+    object-position: 50% 65%;
+
 }
 .omf__sect--menu{
   
@@ -1851,28 +1867,24 @@ MENU MOBILE
 }
 .omf__entete--menu{
     display:flex;
-    flex-direction:row;
+    flex-direction:row; 
+    justify-content:space-between;
+    align-items:center;
     width: 100%;
     height: auto;
-    justify-content:center;
-    align-items:baseline;
+    margin: -.5em 0em 0em 0em;  
+   
 }
  .omf__entete--nom{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
     font-family:'Shrikhand', sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.2em;
+    padding: 0em 0em 0em 3em ;
 }
 .omf__sect--picto1{
-    display:flex;
-    flex-direction:row;
     width: 100px;
     height: 100px;
-    justify-content:center;
-    align-items:center;
-    padding-left: 150px; 
+    padding: 0em 3em 0em 0em ;
+}
     
 }
 .omf__sect--picto1:hover .omf__picto--regular{
@@ -1900,11 +1912,11 @@ MENU MOBILE
     justify-content:center;
     align-items: center;
     width:100%;
-    font-size:2rem;
+  
 
 }
 .omf__partie--titre{
-    font-size:1.4rem;
+    font-size:1em;
     padding: 5px 10px;
     margin-left: 10px;
     border-bottom: 2px solid black;
@@ -1914,7 +1926,7 @@ MENU MOBILE
     display: none;
 }
 .omf__carte{
-    margin:0px 20px 20px 10px;
+    margin:0px 10px 10px 10px;
 }
 /* .omf__carte--dessert{
     display: flex;
@@ -2024,26 +2036,25 @@ MENU MOBILE
     justify-content: space-around;
     align-items:center;
     width:100%;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 .omf__item--titre{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1em;
     font-weight: bold;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
     width:100%;
-    padding: 5px;
+    
 
   
 }
 .omf__item--infos{
     display: flex;
-   
     justify-content: center;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: .8em;
     padding: 0px 0px 0px 0px;
     width: 100%;
 }   
@@ -2053,8 +2064,8 @@ MENU MOBILE
     justify-self: center;
     transition: all 500ms ease-in-out;
     width:100%;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: .5em;
+    padding-top: .5em;
    
 
 }
@@ -2064,7 +2075,7 @@ MENU MOBILE
     text-align: center;
     /* align-items:flex-start; */
     align-self: flex-end; 
-    font-size: 1.5rem;
+    font-size: 1em;
     font-weight: bold;
     width: 50%;
     height: auto;
@@ -2081,7 +2092,7 @@ MENU MOBILE
     height:auto;
 }
 .fa-check-circle{
-    font-size:1.8rem;
+    font-size:1em;
     color:var(--hover-back-clr);
     transition: all 200ms  ease-in-out ;
 }
@@ -2099,11 +2110,11 @@ MENU MOBILE
 .omf__btn--cmd{
     background: linear-gradient(#c94fd4, #9356DC);
     color: #FFF;
-    font-size: 2rem;
-    width:80%;
-    height:80px;
+    font-size: 1em;
+    width:60%;
+    height:40px;
     border-radius: 20px;
-    margin: 80px 20px 80px 20px;
+    margin: 40px 0px 40px 0px;
 }
 
 }
