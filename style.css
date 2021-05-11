@@ -16,7 +16,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
 
 
 
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 680px) 
   {
      
         
@@ -289,8 +289,6 @@ button:hover{
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    /* width:4em;
-    height:4em; */
     margin: 0em 1em 0em 1.5em;
     color: grey;
 }
@@ -308,7 +306,7 @@ button:hover{
 section{
     position: relative;
     z-index: 2;
-    margin: 0px 0px 0px 0px;
+    margin: 0em 0em 0em 0em;
 }
 .omf__sect{
     display:flex;
@@ -318,7 +316,7 @@ section{
     align-items:flex-start;
     max-width: 100%;
     background-color: var(--header-back-clr);
-    padding: 0px 40px 100px 40px;
+    padding: 0em 3em 40px 100px 40px;
 }
 
 .omf__sect--restaurants{
@@ -771,7 +769,7 @@ ACCUEIL TABLETTE
 
 
 @media screen 
-  and (min-width: 481px) 
+  and (min-width: 681px) 
   and (max-width: 1024px)
   {
 body{
