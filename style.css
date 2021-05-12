@@ -200,18 +200,18 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         
     }
     .omf__btn--head, .omf__btn--cmd{
-        font-size: 2em;
+        font-size: 2.5em;
         height:3em;
         border-radius:5em;
     }
     .omf__btn--head{
-        font-size: 2em;
+        /* font-size: 2em; */
         margin: 2em 0em 4em 0em;
         padding: 0em 2em 0em 2em;
     }
     .omf__btn--cmd{
-        font-size: 2em;
-        margin: 2em 0em 4em 0em;
+        /* font-size: 2em; */
+        margin: 3em 0em 4em 0em;
         padding: 0em 4em 0em 4em;
     }
     button:hover{
@@ -303,6 +303,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
     section{
         position: relative;
         z-index: 2;
+        margin:0px 0px -30px 0px;
     }
     .omf__sect{
         display:flex;
@@ -310,7 +311,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         justify-content:flex-start;
         max-width: 100%;
         background-color: var(--header-back-clr);
-        padding: 0px 30px 80px 30px;
+        padding: 0px 30px 100px 30px;
     }
     
     .omf__sect--restaurants{
@@ -448,7 +449,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
     }
     .omf__imglog--contain1{
         width: 100%;
-        padding: 1em 0em 1em 2em;
+        padding: 2em 0em 2em 2em;
         filter: invert(1);
     }
     .omf_footer--picto{
@@ -499,7 +500,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         background: white;
     }
     .omf__header--return{
-        font-size: 2em;
+        font-size: 3em;
         margin: 0em 0em 0em 1em;
         padding-top: .5em;
     }
@@ -509,7 +510,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
     
     .omf__img--contain{
         width:100%;
-        height:25em;
+        height:600px;
         object-fit:cover;
         object-position: 50% 40%;
     }
@@ -522,8 +523,8 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         width:auto;
         height: auto;
         background: var(--header-back-clr);
-        border-top-left-radius:3em;
-        border-top-right-radius:3em;
+        border-top-left-radius:100px;
+        border-top-right-radius:100px;
         padding:  0em 3em 0em 3em;
         margin: 0em 0em -5em 0em;
     }
@@ -538,7 +539,7 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
      .omf__entete--nom{
         width: 100%;
         font-family:'Shrikhand', sans-serif;
-        font-size:1em;
+        font-size:3em;
     }
     .omf__sect--picto1{
         display:flex;
@@ -571,13 +572,13 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         z-index: 3;
     }
     .omf__partie--titre{
-        font-size:1em;
+        font-size:3em;
         padding: 0em 0em;
     
     }
     .omf__partie--underline{
-        width:2.5em;
-        height:.2em;
+        width:8em;
+        height:.5em;
         margin: .5em 0em;
         background-color: var(--select-back-clr);
     }
@@ -656,12 +657,12 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         flex-flow: row nowrap;
         width:100%;
         height:auto;
-        margin:1.2em 0em 1em 0em;
+        margin:1.2em 0em 3em 0em;
         background :#FFF;
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         border-radius: 2em;
         overflow:hidden;
-        border: 2px solid greenyellow;
+       
         
     }
     .omf__item--description{
@@ -671,29 +672,29 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         overflow:hidden;
         position: relative;
         z-index: 1;
-        border: 2px solid brown;
+       
     
     }
     
     .omf__item--titre{
-        font-size: 1.2em;
+        font-size: 3em;
         font-weight: bold;
         padding: 20px 0px 10px 20px;
         overflow:hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
-        border: 2px solid red;
+        
         
     
     }
     .omf__item--infos{
         width:100%;
-        font-size: 1em;
+        font-size: 2em;
         padding: 0px 0px 20px 20px;
         overflow:hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
-        border: 2px solid red;
+        
     
     }
     .omf__item--prival{
@@ -701,40 +702,42 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
         flex-direction: row;
         justify-self: flex-start;
         transition: all 500ms ease-in-out;
-        width:10em;
-        left: 5em; 
+        width:140px;
+        /* left: 50px;  */
         position: relative;
-        border: 2px solid aqua;
+       
     }
     .omf__item--prix{
         display:flex;
         justify-content: flex-end;
         align-items:flex-start;
         align-self: flex-end; 
-        font-size:1em;
+        font-size:3em;
         font-weight: bold;
-        width: min-content;
+        width: 100%;
         height: auto;
-        margin: 0px 25px 20px 25px;
-        border: 2px solid blue;
+        /* padding: 0px 30px 20px 0px; */
+        margin: 0px 35px 20px 30px;
+        
     
     }
     .omf__item--validation{
         display:flex;
         justify-content: center;
         align-items:center;
-        width:10em;
+        width:100%;
         height:auto;
-        background-color: var(--select-back-clr);
+        background-color: var(--select-back-clr); 
+        padding: 0px 40px 0px 40px;
     }
     .fa-check-circle{
-        font-size:2em;
+        font-size:3em;
         background-color: var(--select-back-clr);
         color:white;
         transition: all 500ms ease-in-out;
     }
     .omf__item:active .omf__item--prival{
-        transform: translateX(-5em);
+        transform: translateX(-125px);
     
     }
     .omf__item:active .fa-check-circle{
