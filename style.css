@@ -14,7 +14,7 @@
 ACCUEIL MOBILE iPhone 6+, 7+ and 8+
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media screen and (min-width:320px) and (max-width:480px) {
+/* @media screen and (min-width:320px) and (max-width:480px) { */
     body{
         display: flex;
         flex-direction: column;
@@ -730,13 +730,13 @@ ACCUEIL MOBILE iPhone 6+, 7+ and 8+
     .omf__item:active .fa-check-circle{
          transform: rotate(360deg) 
     }
-}
+/* } */
  
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 ACCUEIL TABLETTE 
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media screen and (min-width:481px) and (max-width:768px) {
+/* @media screen and (min-width:481px) and (max-width:768px) { /
     body{
         display:flex;
         flex-direction: column;
@@ -1075,13 +1075,13 @@ ACCUEIL TABLETTE
         color:var(--search-bar-clr);
         font-size: 1.2rem;
         padding: 0px 20px 0px 20px;
-    }   
+    }    */
     
 
 
     /*°°°°°°°°°°°°°°°°°°°°°°°°°°°MENU TABLETTE°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-    .omf__imglog--contain{
+    /* .omf__imglog--contain{ 
         width: 40%;
         padding: 20px 0px;
     }
@@ -1386,13 +1386,13 @@ ACCUEIL TABLETTE
         border-radius: 20px;
         margin: 80px 20px 80px 20px;
     }
-}
+}*/
    
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 ACCUEIL DESKTOP 
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media  screen and (min-width:769px){
+/* @media  screen and (min-width:769px){ 
     body{
         display:flex;
         flex-direction: column;
@@ -1758,7 +1758,7 @@ ACCUEIL DESKTOP
     
     /* °°°°°°°°°°°°°°°°°°°°°°°°°°° MENU DESKTOP °°°°°°°°°°°°°°°°°°°°°°°*/
     
-    .omf__head--menu{
+    /* .omf__head--menu{ 
         display:flex;
         flex-direction:row;
         justify-content: center;
@@ -2032,7 +2032,7 @@ ACCUEIL DESKTOP
         border-radius: 20px;
         margin: 40px 0px 40px 0px;
     }
-}
+}*/
 
 
 
