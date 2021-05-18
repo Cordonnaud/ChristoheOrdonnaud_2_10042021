@@ -983,9 +983,6 @@ ACCUEIL DESKTOP }
         height: auto;
      
     }
-    .omf__head--arrow{
-        display: none;
-    }
     .omf__header--return{
         display:flex;
         flex-direction: row;
