@@ -732,242 +732,155 @@ footer{
 ACCUEIL DESKTOP }
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-/*@media screen and (min-width:768px){ 
-    body{
-        display:flex;
-        flex-direction: column;
-        font-family:'Roboto', sans-serif;
-        font-size: 20px;
-    }
-    .content__acceuil{
-        display:flex;
-        flex-direction: column;
-        width: 100%;
-    }
+@media only screen and (min-width:768px){ 
+    /* body{
+       background-color: royalblue;
+    } */
     .omf__imglog--contain{
-        width: 40%;
-        padding: 30px 0px;
-    }
-    .omf__logo--accueil{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        
-    }
-    .omf__imglog--contain{
-        padding: 40px 0px;
+        width: 50%;
+        padding: 0px 0px;
     }
     .omf__head--text1{
         font-size: 40px;      
     }
     .omf__head--text2{
-        font-size: 40px;
+        font-size: 30px;
         
-    }
-    .omf__head--search{
-        display: flex;
-      
-
-    }
-    .omf__head__btn{
-        font-size: 20px;
     }
     .omf__head--pointeur{
-        width: min-content;
-        font-size: 40px;
+        font-size: 30px;
     }
     input{
-        width: min-content;
         font-size: 30px;
-        padding: 10px 0px;
-        margin-left: 20px;
-    
-     
-     
-    
+    }
     .omf__btn--head{
-        order:4;
-        width:40%;
-        height:50px;
-        font-size: .8em;
-        padding:10px 20px;
-        text-align:center;
-        margin: 0em 0em;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        border-radius: 10px;
-        background: linear-gradient(#c94fd4, #9356DC);
-        color: #FFF;
+        font-size: 20px;
+        margin: 20px 0 40px 0;
+
+        
     }
     .omf__nav{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        background-color: var(--hover-back-clr);
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        padding-bottom: 0rem;
-    
-    }
-    .omf__nav--fonctionnement{
-        flex-direction: row;
-        text-align: center;
-        width:100%;
-        font-size: 1em;
-        margin-top: -.50em;
-        margin-bottom: -.50em;
-    }
-    .omf__nav--box {
-        width:min-content;
+        display:grid;
+        grid-template-columns:  AUTO 80%;
+        grid-template-rows: 33% 33% 33%;
+        padding: 30px 0;
         
-    
-    }.omf__nav--etiq{
-        font-size: 15px;
-        width:max-content;
-        padding-right: 30px;
-     
-    }
-    .omf__nav--num{
-        display:flex; 
-        flex-direction:row; 
+    }.omf__nav--fonctionnement{
+        display:flex;
+        font-size:30px;
+        writing-mode:vertical-lr;
+        text-orientation: sideways-left;
         justify-content: center;
-        align-items: center;
-        width:auto;
-        height: auto;
-        font-size: 1em;
-        margin: 7px 10px 0px 10px;
-        font-weight: bold;
-        border-radius: 5px;
+        padding: 60px 0 0 0;
+        /* align-items: center; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
     }
-    .omf__nav--picto{
-        color:var(--butt-back-clr);
-        font-size: 1em;
-        padding: 0px 5px 0px 5px;;
+    .omf__nav--box1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-    .omf__nav--text{
-        font-size: 1em;
+    .omf__nav--box1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .omf__nav--box1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }.omf__nav--etiq{
+        /* font-size: 15px; */
+        width:520px;
+      
+    }.omf__nav--text{
+        font-size: 25px;
         padding: 0px 10px 0px 0px;
     
-    }
-    section{
-        position: relative;
-        z-index: 2;
-        margin: 0px 0px 0px 0px;
-    }
-    .omf__sect{
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:center;
-        align-content:center;
-        align-items:center;
+    }.omf__sect{
+        display:grid;
+        display:grid;
+        grid-template-columns:  AUTO 40% 40%;
+        grid-template-rows: 50% 50% ;
+        /* padding: 30px 0; */
         max-width: 100%;
-        background-color: var(--header-back-clr);
         padding: 0px 0px 100px 0px;
-    }
-    
-    .omf__sect--restaurants{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width:100%;
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: -100px;
+    }.omf__sect--restaurants{
+        display:flex;
+        font-size:30px;
+        writing-mode:vertical-lr;
+        text-orientation: sideways-left;
+        justify-content: flex-start;
+        padding-top: 20px;
+        /* align-items: center; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
     .omf__sect--restos{
-        width: 40%;
-        margin: 0px 30px 30px 30px;
-        overflow: hidden;
+        width: 95%;
+        margin: 30px 30px 30px 30px;
+        /* overflow: hidden; */
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         border-radius: 30px;
-       
-        
-       
     }
-    
     .omf__sect--img{ 
-        width:auto;
-        height:auto;
-        padding: 0px 0px ; 
-        margin-bottom: -5px;
+        /* width:auto; */
+        /* height:auto; */
+        /* padding: 0px 0px ;  */
+        /* margin-bottom: -5px; */
         
-    }
-    .omf__sect--nouveau{
-        position:relative;
-        width: 100%;
-        background-color: var(--select-back-clr ) ;
-        color : var(--select-txt-clr );
-        font-size: 1em;
-        font-weight: bold;
-        text-align: center;
-        padding: 5px 0px ;
-        z-index: 2;
-        top:50px;
-        Left: 0%;
-        margin-top: -50px;
-    }
-    a {
-        text-decoration: none;
-        color: #000;
+    }.omf__sect--nouveau{
+        font-size: 20px;
+        right: 10%;
+       
+
     }
     .omf__img--contain1{
         position:relative;
         z-index: 1;
         width:100%;
-        height:15em;
+        height:300px;
         object-fit:cover;
         object-position: 50% 55%;
-        
-    }
-    .omf__sect--infos{
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:flex-start;
-        align-content:flex-start;
-        align-items:baseline;
-        max-width: 100%;
-        height:auto;
-        background-color: #FFF;
-       
-    }
-    .omf__sect--description{
-        display:flex;
-        flex-flow:column wrap;
-        width: 80%;
-        padding: 10px 0px 20px 40px;
-        flex:1;
-    }
-    .omf__sect--nom{
-        font-size: 1.5em;
-        font-weight:bold;
-    }
-    .omf__sect--lieu{
-        font-size: 1.3em;
-        padding: 10px 0px 0px 0px;
+      
     }
     
+    .omf__sect--nom{
+        font-size: 30px;
+       
+    } 
+    .omf__sect--lieu{
+        font-size: 20px;
+       
+    } 
+    
     .omf__sect--picto{
-        position:relative;
+        /* position:relative;
         z-index: 2;
         top: 0%;
         left:0%;
         display:flex;  
         flex-direction:row ; 
         justify-content: center;
-        align-items:center; 
-        width: 50px;
-        height:auto;
-        margin: 0px 40px 0px 0px;
+        align-items:center;  */
+        width: 30px;
+        /* height:auto;
+        margin: 0px 40px 0px 0px; */
       
     }
     .omf__picto--solid, .omf__picto--regular{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        padding: 30px 00px 0px 0px;
-        position: absolute;
-        font-size: 1.5em;
+        position: absolute; */
+        font-size: 30px;
         transition: all 500ms ease-in-out;
         width:auto;
         height:auto;
@@ -990,6 +903,22 @@ ACCUEIL DESKTOP }
         opacity: 1;
         
     }
+   
+    /*
+    
+ 
+    section{
+        position: relative;
+        z-index: 2;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
     .omf__footer{
         display:flex;
         flex-flow:row wrap;
@@ -1324,8 +1253,8 @@ ACCUEIL DESKTOP }
         height:40px;
         border-radius: 20px;
         margin: 40px 0px 40px 0px;
-    }
-}*/
+    }*/
+}
 
 
 
