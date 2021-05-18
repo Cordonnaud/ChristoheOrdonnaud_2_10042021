@@ -11,8 +11,8 @@
 /* @media screen and (max-width:768px){  */
  
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     max-width:100%;
     font-family:'Roboto', sans-serif;
     font-size: 15px;
@@ -76,13 +76,13 @@ body{
     }
 } 
 #content__menu{
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
     animation: anim-content 2700ms forwards ease-in-out;
 }
 #content__acceuil{
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
     animation: anim-content 2700ms forwards ease-in-out;
 }
 @keyframes anim-content {
@@ -148,9 +148,9 @@ body{
     display:none
 }
 input {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     width:70%;
     font-size: 3em;
     border: none;
@@ -179,8 +179,7 @@ input {
     padding: 0em 1.5em 0em 1.5em;
 }
 .omf__btn{
-    
-    background: linear-gradient(#d966e4, #9356DC);
+     background: linear-gradient(#d966e4, #9356DC);
     color: #FFF;
     align-self: center;
     width:max-content;
@@ -211,11 +210,11 @@ button:hover{
 
 
 .omf__nav{
-    display:flex;
+    /* display:flex;
     flex-flow:column wrap;
     justify-content:center;
     align-content:flex-start;
-    align-items:flex-start;
+    align-items:flex-start; */
     max-width: 100%;
     margin: 1em 0em 1em 0em;
     padding: 0em 0em 0em 0em;
@@ -235,12 +234,12 @@ button:hover{
     padding: 0em 0em 0em 1.5em;
 }
 .omf__nav--num {
-    position:relative;
-    left: 1em;
-    z-index: 1;
     display:flex; 
     flex-direction:row; 
     justify-content: center;
+    position:relative;
+    left: 1em;
+    z-index: 1;
     align-items: center;
     font-size: 2.4em;
     width:2em;
@@ -285,7 +284,7 @@ button:hover{
     display:flex; 
     flex-direction:row; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     font-size:2.3em;
     font-weight: bold;
     color:#000;
@@ -296,9 +295,9 @@ section{
     margin:0px 0px -30px 0px;
 }
 .omf__sect{
-    display:flex;
+    /* display:flex;
     flex-flow:column wrap;
-    justify-content:flex-start;
+    justify-content:flex-start; */
     max-width: 100%;
     background-color: var(--header-back-clr);
     padding: 0px 30px 100px 30px;
@@ -731,11 +730,17 @@ footer{
 ACCUEIL DESKTOP 
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media screen and (min-width:768px){
+/* @media only screen and (min-width:500px){ 
+
+    input{
+        font-size: 30px;
+      
+    }
 
 
  
-    body{
+     } */
+     /* /*body{
         
       font-size: 20px;
       background-color: royalblue;
@@ -779,12 +784,7 @@ ACCUEIL DESKTOP
         width: min-content;
         font-size: 40px;
     }
-    input{
-        width: min-content;
-        font-size: 30px;
-        padding: 10px 0px;
-        margin-left: 20px;
-    }.omf__btn--head{
+    .omf__btn--head{
         order:4;
         width:40%;
         height:50px;
@@ -797,7 +797,7 @@ ACCUEIL DESKTOP
         background: linear-gradient(#c94fd4, #9356DC);
         color: #FFF;
     }
-    }/*.omf__nav{
+   .omf__nav{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
