@@ -732,7 +732,7 @@ footer{
 ACCUEIL DESKTOP }
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media only screen and (min-device-width:768px){ 
+@media only screen and (min-width:768px){ 
     /* body{
        background-color: royalblue;
     } */
@@ -1248,7 +1248,7 @@ ACCUEIL DESKTOP }
         height:40px;
         border-radius: 20px;
         margin: 40px 0px 40px 0px;
-    }*/
+    }
 }
 
 
