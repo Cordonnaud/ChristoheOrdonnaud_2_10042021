@@ -732,7 +732,7 @@ footer{
 ACCUEIL DESKTOP }
 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-@media only screen and (min-width:768px){ 
+@media only screen and (min-device-width:768px){ 
     /* body{
        background-color: royalblue;
     } */
@@ -830,14 +830,9 @@ ACCUEIL DESKTOP }
         /* overflow: hidden; */
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         border-radius: 30px;
+  
     }
-    .omf__sect--img{ 
-        /* width:auto; */
-        /* height:auto; */
-        /* padding: 0px 0px ;  */
-        /* margin-bottom: -5px; */
-        
-    }.omf__sect--nouveau{
+    .omf__sect--nouveau{
         font-size: 20px;
         right: 10%;
        
@@ -980,7 +975,7 @@ ACCUEIL DESKTOP }
     
     /* °°°°°°°°°°°°°°°°°°°°°°°°°°° MENU DESKTOP °°°°°°°°°°°°°°°°°°°°°°°*/
     
-    /* .omf__head--menu{ 
+  .omf__head--menu{ 
         display:flex;
         flex-direction:row;
         justify-content: center;
