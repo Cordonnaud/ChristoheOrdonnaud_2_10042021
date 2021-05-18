@@ -8,7 +8,7 @@
     --select-txt-clr :#054938;
     --degrad :linear-gradient(#d966e4, #9356DC);
 }
-/* @media screen and (max-width:768px){  */
+/* @media only screen and (max-width:500px){  */
  
 body{
     /* display: flex;
@@ -726,21 +726,37 @@ footer{
 }
 /* }   */
   
-/* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+/************************************************
 ACCUEIL DESKTOP 
-°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+*************************************************/
 
-/* @media only screen and (min-width:500px){ 
+@media screen and (min-width:500px){ 
 
-    input{
-        font-size: 30px;
-      
+    body{
+        background-color: green;
     }
+    input{
+        width:min-content;
+        font-size: 30px;
+        margin:none;
+    }
+    .omf__head--pointeur{
+        width: min-content;
+        font-size: 30px;
+    }
+    .omf__head--text1{
+        font-size: 40px;      
+    }
+    .omf__head--text2{
+        font-size: 30px;
+        
+    }
+    .omf__head__btn{
+        font-size: 20px;
+    }
+}
 
-
- 
-     } */
-     /* /*body{
+     /*body{
         
       font-size: 20px;
       background-color: royalblue;
@@ -765,25 +781,13 @@ ACCUEIL DESKTOP
     .omf__imglog--contain{
         padding: 40px 0px;
     }
-    .omf__head--text1{
-        font-size: 40px;      
-    }
-    .omf__head--text2{
-        font-size: 40px;
-        
-    }
+    
     .omf__head--search{
         display: flex;
       
 
     }
-    .omf__head__btn{
-        font-size: 20px;
-    }
-    .omf__head--pointeur{
-        width: min-content;
-        font-size: 40px;
-    }
+    
     .omf__btn--head{
         order:4;
         width:40%;
