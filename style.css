@@ -771,7 +771,7 @@ ACCUEIL DESKTOP }
         writing-mode:vertical-lr;
         text-orientation: sideways;
         /* justify-content: center; */
-        padding: 0 0 0 40px  ;
+        padding: 0 0 0 20px  ;
         /* align-items: center; */
         grid-column-start: 1;
         grid-column-end: 2;
@@ -819,7 +819,7 @@ ACCUEIL DESKTOP }
         writing-mode:vertical-lr;
         text-orientation: sideways;
         justify-content: flex-start;
-        padding: 40px 0 0 40px ;
+        padding: 40px 0 0 20px ;
         /* align-items: center; */
         grid-column-start: 1;
         grid-column-end: 2;
