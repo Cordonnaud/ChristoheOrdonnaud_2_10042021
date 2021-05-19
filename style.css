@@ -787,13 +787,13 @@ ACCUEIL DESKTOP }
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    .omf__nav--box1 {
+    .omf__nav--box2 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
-    .omf__nav--box1 {
+    .omf__nav--box3 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 3;
