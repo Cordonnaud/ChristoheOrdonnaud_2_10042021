@@ -1180,7 +1180,7 @@ ACCUEIL DESKTOP }
         font-size: 20px;
         white-space: normal;
         /* font-weight: bold; */
-        padding: 0px 5px 0px 5px;
+        padding: 10px 10px 0px 10px;
         /* width:100%; */
         
     
@@ -1203,15 +1203,16 @@ ACCUEIL DESKTOP }
         width:100%;
         padding-bottom: .5em;
         padding-top: .5em;
-       
-    
+    }
+    .omf__item:active .omf__item--prival{
+        transform: translateX(0px);
     }
     .omf__item--prix{
         display:flex;
         justify-content:flex-start;
         text-align: center;
         align-self: flex-end; 
-        font-size: 1em;
+        font-size: 20px;
         font-weight: bold;
         width: 50%;
         height: auto;
@@ -1220,15 +1221,19 @@ ACCUEIL DESKTOP }
     
     }
     .omf__item--validation{
-        display:flex;
+        /* display:flex;
         justify-content: center;
-        align-items:center;
+        align-items:center; */
         align-self: flex-end; 
         width: 50%;
-        height:auto;
+        height: auto;
+        background-color: white;
+        padding: 0px;
+
     }
     .fa-check-circle{
-        font-size:1em;
+        font-size: 20px;
+        background-color: white;
         color:var(--hover-back-clr);
         transition: all 200ms  ease-in-out ;
     }
