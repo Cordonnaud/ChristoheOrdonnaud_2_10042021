@@ -863,24 +863,10 @@ ACCUEIL DESKTOP }
     } 
     
     .omf__sect--picto{
-        /* position:relative;
-        z-index: 2;
-        top: 0%;
-        left:0%;
-        display:flex;  
-        flex-direction:row ; 
-        justify-content: center;
-        align-items:center;  */
-        width: 20px;
+         width: 20px;
        
-        /* height:auto;*/
-        /* margin: 0px 40px 0px 0px;  */
-      
     }
     .omf__picto--solid, .omf__picto--regular{
-        /* display: flex;
-        flex-direction: row;
-        position: absolute; */
         font-size: 30px;
         transition: all 500ms ease-in-out;
         width:auto;
@@ -963,23 +949,6 @@ ACCUEIL DESKTOP }
         padding: 0px 20px 0px 20px;
     } 
    
-    /*
-    
- 
-    section{
-        position: relative;
-        z-index: 2;
-        margin: 0px 0px 0px 0px;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /* °°°°°°°°°°°°°°°°°°°°°°°°°°° MENU DESKTOP °°°°°°°°°°°°°°°°°°°°°°°*/
     
   .omf__head--menu{ 
@@ -1207,7 +1176,7 @@ ACCUEIL DESKTOP }
         padding-bottom: .5em;
         padding-top: .5em;
     }
-    .omf__item:active .omf__item--prival{
+    .omf__item:hover .omf__item--prival{
         transform: translateX(0px);
     }
     .omf__item--prix{
@@ -1240,7 +1209,7 @@ ACCUEIL DESKTOP }
         color:var(--hover-back-clr);
         transition: all 200ms  ease-in-out ;
     }
-    .omf__item:active .fa-check-circle{
+    .omf__item:hover .fa-check-circle{
          transform: rotate(360deg);
          color:var(--butt-back-clr);
     }
